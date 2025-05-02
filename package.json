@@ -1,0 +1,16 @@
+{
+  "name": "resume.kevinnlsamuel.com",
+  "version": "1.0.0",
+  "description": "Kevin's resume",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kevin Samuel",
+  "license": "UNLICENSED",
+  "type": "module",
+  "dependencies": {
+    "@11ty/eleventy": "^3.0.0",
+    "tailwindcss": "^3.4.17"
+  }
+}
