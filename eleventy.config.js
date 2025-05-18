@@ -1,4 +1,4 @@
-import { load as parseYaml } from 'js-yaml'; 
+import { load as parseYaml } from 'js-yaml';
 export default function(eleventyConfig) {
 	eleventyConfig.addPassthroughCopy("style.css");
 	eleventyConfig.addDataExtension("yml,yaml", (data) => {
