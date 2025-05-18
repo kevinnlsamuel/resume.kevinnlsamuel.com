@@ -1,7 +1,7 @@
 import { load as parseYaml } from 'js-yaml';
 import { readFileSync as read } from 'fs';
 
-const site = parseYaml(read(process.cwd() + '/_data/site.yml'))
+const langs = parseYaml(read(process.cwd() + '/_data/langs.yml'))
 
 export default function(eleventyConfig) {
 	eleventyConfig.addBundle("autoredirect");
@@ -10,7 +10,7 @@ export default function(eleventyConfig) {
 		return parseYaml(data);
 	})
 
-	for (const lang of site.langs) {
+	for (const lang in langs) {
 		eleventyConfig.addTemplate(
 			`${lang}.liquid`, '',
 			{ layout: 'resume.liquid', lang }
