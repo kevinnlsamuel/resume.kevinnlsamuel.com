@@ -8,6 +8,9 @@ dev:
 setup:
 	$(call RUNNER,sh)
 
+sh:
+	podman exec --interactive --tty $(PROJECT)-dev sh
+
 define RUNNER
 	podman run --rm --interactive --tty \
 		--name=$(PROJECT)-$@ \
