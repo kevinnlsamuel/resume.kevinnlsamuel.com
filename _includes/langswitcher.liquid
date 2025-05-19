@@ -1,0 +1,28 @@
+{%assign current = langs[lang]%}
+
+<details
+		open="{{-open | default: false-}}"
+		class="bg-sky-300 rounded-lg group text-clip">
+	<summary class="marker:content-['']
+		bg-sky-500 p-2
+		rounded-lg group-open:rounded-none group-open:rounded-t-lg">
+		<span class="inline group-open:hidden">
+			<span class="hidden lg:inline">{{-current.flag}} {{current.name-}}</span>
+			<span class="inline lg:hidden">{{-lang-}}</span>
+		</span>
+		<span class="group-open:inline hidden">
+			🌐 <span class="hidden lg:inline">Choose a language</span>
+		</span>
+	</summary>
+
+	<nav class="px-2 pb-2">
+	{%-for lang in langs%-%}
+		<li class="list-none">
+			<a href="/{{lang[0]}}/">
+				<span class="lg:inline hidden">{{lang[1].flag}} {{lang[1].name}}</span>
+				<span class="lg:hidden inline">{{lang[0]}}</span>
+			</a>
+		</li>
+	{%-endfor-%}
+	</nav>
+</details>
