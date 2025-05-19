@@ -5,7 +5,9 @@ const langs = parseYaml(read(process.cwd() + '/_data/langs.yml'))
 
 export default function(eleventyConfig) {
 	eleventyConfig.addBundle("autoredirect");
-	eleventyConfig.addPassthroughCopy("style.css");
+	eleventyConfig.setServerOptions({
+		watch: ["_site/style.css"]
+	});
 	eleventyConfig.addDataExtension("yml,yaml", (data) => {
 		return parseYaml(data);
 	})

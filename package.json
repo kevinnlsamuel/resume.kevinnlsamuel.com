@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "concurrently npm:dev:11ty npm:dev:tw",
     "dev:11ty": "npx @11ty/eleventy --serve",
-    "dev:tw": "npx tailwindcss -i _style/tw.css -o style.css -w"
+    "dev:tw": "npx tailwindcss -i _style/tw.css -o _site/style.css -w"
   },
   "author": "Kevin Samuel",
   "license": "UNLICENSED",
