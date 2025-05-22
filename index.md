@@ -10,13 +10,13 @@ location.replace(`/${lang}/`)
 {% endautoredirect %}
 
 <noscript>
-    <div class="w-14 lg:w-32">
-    {%render
+    <div class="w-14 lg:w-32 mx-auto grid rows-1 h-screen items-center">
+    {%-render
     'langswitcher.liquid',
     langs: langs,
     lang: lang,
     open: 'true'
-    %}
+    -%}
     </div>
 </noscript>
 
