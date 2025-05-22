@@ -1,0 +1,9 @@
+print:
+  en: Print
+  fr: Imprimer
+download:
+  en: Download
+  fr: Télécharger
+chooselang:
+  en: Choose language
+  fr: Chosir la langue

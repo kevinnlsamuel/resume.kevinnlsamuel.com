@@ -1,9 +1,24 @@
 ---
 layout: base.liquid
 ---
-
-# {{ name[lang] }}
-
-
-{{greeting[lang]}}
-
+<header title="{{-name[lang]-}}" class="print:hidden items-center justify-end gap-3 flex">
+	<button>{{-messages.print[lang]-}}</button>
+	<button>{{-messages.download[lang]-}}</button>
+	<div class="w-14 lg:w-32">
+    {%-render
+    'langswitcher.liquid',
+    langs: langs,
+    lang: lang,
+    -%}
+    </div>
+</header>
+<main>
+	<article>
+		<header>
+			<h1>{{-name[lang]-}}</h1>
+		</header>
+	</article>
+</main>
+<footer class="print:hidden text-center">
+	&copy; Kevin Samuel 2025
+</footer>
