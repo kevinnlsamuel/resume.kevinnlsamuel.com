@@ -13,10 +13,17 @@ layout: base.liquid
     </div>
 </header>
 <main>
-	<article>
-		<header>
+	<article class="grid auto-rows-max grid-cols-[1fr_3fr] h-full">
+		<header class="col-span-2 max-h-max">
 			<h1>{{-name[lang]-}}</h1>
 		</header>
+		<section>
+			<header>
+				<p>Education</p>
+			</header>
+		</section>
+		<section>
+		</section>
 	</article>
 </main>
 <footer class="print:hidden text-center">
