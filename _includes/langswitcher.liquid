@@ -1,7 +1,7 @@
 {%assign current = langs[lang]%}
 
 <details
-		open="{{-open | default: false-}}"
+		{%if open%}open{%endif%}
 		class="bg-sky-300 rounded-lg group text-clip">
 	<summary class="marker:content-['']
 		bg-sky-500 p-2 text-sm
