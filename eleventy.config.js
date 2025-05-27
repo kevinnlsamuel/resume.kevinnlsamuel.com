@@ -1,6 +1,5 @@
 import { load as parseYaml } from 'js-yaml';
 import { readFileSync as read } from 'fs';
-import { RenderPlugin } from '@11ty/eleventy';
 
 const langs = parseYaml(read(process.cwd() + '/_data/langs.yml'))
 
@@ -28,5 +27,4 @@ export default function(eleventyConfig) {
 			}
 		)
 	}
-	eleventyConfig.addPlugin(RenderPlugin, {accessGlobalData: true});
 };
