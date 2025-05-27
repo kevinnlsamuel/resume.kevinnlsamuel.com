@@ -13,3 +13,9 @@ skip:
 cv:
   en: resume
   fr: cv
+socials:
+  en: Get in touch
+  fr: Pour me contacter
+toolbar:
+  en: Toolbar
+  fr: Boîte à outils

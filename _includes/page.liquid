@@ -5,22 +5,28 @@ layout: base.liquid
 	{%-getBundle "contentid"-%}
 {%-endcapture-%}
 {%if contentid%}
-<a class="sr-only focus:not-sr-only focus:absolute bg-bg"
+<a class="sr-only focus:not-sr-only focus:absolute bg-bg z-10"
    href="#{{-contentid-}}">
 	{{messages.skip[lang]}}
 </a>
 {%endif%}
 
-<aside title="{{-name[lang]-}}" class="relative left-0 top-0 print:hidden items-center justify-end flex text-sm">
+<aside title="{{messages.toolbar[lang]}}" class="relative left-0 top-0 print:hidden items-center justify-end flex text-sm">
 	<button class="px-3 h-full">{{-messages.print[lang]-}}</button>
 	<button class="px-3 h-full">{{-messages.download[lang]-}}</button>
 
-	<button class="px-3 h-full peer" title="{{-messages.chooselang[lang]-}}">{{lang}}</button>
+	<button class="px-3 h-full peer"
+			aria-label="{{messages.chooselang[lang]-}}"
+			title="{{-messages.chooselang[lang]-}}">
+		{{lang}}
+	</button>
 	<nav class="sr-only
 				top-full right-0
 				peer-focus:absolute peer-hover:absolute
 				hover:absolute focus:absolute
 				hover:not-sr-only focus:not-sr-only
+				has-[:focus]:not-sr-only
+				has-[:focus]:absolute
 				peer-focus:not-sr-only peer-hover:not-sr-only">
 		<ul class="bg-bg p-2 pt-px">
 			{%for lang in langs%}

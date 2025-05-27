@@ -9,7 +9,7 @@ layout: page.liquid
 	<header class="col-span-2 max-h-max grid md:grid-cols-[3fr_1fr] gap-2">
 		<h1 class="text-4xl font-bold">{{-name[lang]-}}</h1>
 		<p class="row-start-2">{{-kicker[lang]-}}</p>
-		<ul class="text-right row-span-2">
+		<ul title="{{messages.socials}}" class="text-right row-span-2">
 			{%for social in socials-%}
 				<li class="underline">
 					<a target="_blank" referrerpolicy="no-referrer"
