@@ -14,7 +14,7 @@ layout: base.liquid
 				peer-focus:not-sr-only peer-hover:not-sr-only">
 		<ul class="bg-white px-2 py-px">
 			{%for lang in langs%}
-				<li><a href="/{{lang[0]}}/">{{lang[1].name}}<a></li>
+				<li lang="{{lang[0]}}"><a href="/{{lang[0]}}/">{{lang[1].name}}<a></li>
 			{%endfor%}
 		</ul>
 	</nav>
