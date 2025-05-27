@@ -9,7 +9,7 @@ layout: page.liquid
 	<header class="col-span-2 max-h-max grid md:grid-cols-[3fr_1fr] gap-2">
 		<h1 class="text-4xl font-bold">{{-name[lang]-}}</h1>
 		<p class="row-start-2">{{-kicker[lang]-}}</p>
-		<ul title="{{messages.socials}}" class="text-right row-span-2">
+		<ul title="{{messages.socials[lang]}}" class="text-right row-span-2">
 			{%for social in socials-%}
 				<li class="underline">
 					<a target="_blank" referrerpolicy="no-referrer"
@@ -21,10 +21,16 @@ layout: page.liquid
 		</ul>
 	</header>
 	<section>
-		<header>
-			<h2>Education</h2>
-		</header>
 	</section>
-	<section>
+	<section class="grid gap-2">
+		<section class="rounded bg-secondary">
+			<h2>{{messages.experience[lang]}}</h2>
+		</section>
+		<section class="rounded bg-secondary">
+			<h2>{{messages.education[lang]}}</h2>
+		</section>
+		<section class="rounded bg-secondary">
+			<h2>{{messages.certification[lang]}}</h2>
+		</section>
 	</section>
 </article>

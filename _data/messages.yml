@@ -19,3 +19,12 @@ socials:
 toolbar:
   en: Toolbar
   fr: Boîte à outils
+experience:
+  en: Professional Experience
+  fr: Éxperience professionelle
+education:
+  en: Education
+  fr: Éducation
+certification:
+  en: Certfications
+  fr: Certificats
