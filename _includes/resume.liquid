@@ -5,21 +5,18 @@ layout: base.liquid
 	<button>{{-messages.print[lang]-}}</button>
 	<button>{{-messages.download[lang]-}}</button>
 	<div class="w-14 lg:w-32">
-    {%-render
-    'langswitcher.liquid',
-    langs: langs,
-    lang: lang,
-    -%}
+		{%renderFile './_includes/langswitcher.liquid'%}
     </div>
 </header>
 <main>
-	<article class="grid auto-rows-max grid-cols-[1fr_3fr] h-full">
+	<article class="grid grid-rows-[max-content_auto] grid-cols-[1fr_3fr] h-full">
 		<header class="col-span-2 max-h-max">
 			<h1>{{-name[lang]-}}</h1>
+			<p>{{-kicker[lang]-}}</p>
 		</header>
 		<section>
 			<header>
-				<p>Education</p>
+				<h2>Education</h2>
 			</header>
 		</section>
 		<section>

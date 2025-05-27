@@ -1,5 +1,6 @@
 import { load as parseYaml } from 'js-yaml';
 import { readFileSync as read } from 'fs';
+import { RenderPlugin } from '@11ty/eleventy';
 
 const langs = parseYaml(read(process.cwd() + '/_data/langs.yml'))
 
@@ -21,8 +22,11 @@ export default function(eleventyConfig) {
 
 	for (const lang in langs) {
 		eleventyConfig.addTemplate(
-			`${lang}.liquid`, '',
-			{ layout: 'resume.liquid', lang }
+			`${lang}.liquid`, null, {
+				layout: 'resume.liquid',
+				lang,
+			}
 		)
 	}
+	eleventyConfig.addPlugin(RenderPlugin, {accessGlobalData: true});
 };
