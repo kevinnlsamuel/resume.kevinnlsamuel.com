@@ -1,41 +1,17 @@
 ---
-layout: base.liquid
+layout: page.liquid
 ---
-<header title="{{-name[lang]-}}" class="relative left-0 top-0 print:hidden items-center justify-end flex text-sm">
-	<button class="px-3 h-full">{{-messages.print[lang]-}}</button>
-	<button class="px-3 h-full">{{-messages.download[lang]-}}</button>
 
-	<button class="px-3 h-full peer" title="{{-messages.chooselang[lang]-}}">{{lang}}</button>
-	<nav class="sr-only
-				top-full right-0
-				peer-focus:absolute peer-hover:absolute
-				hover:absolute focus:absolute
-				hover:not-sr-only focus:not-sr-only
-				peer-focus:not-sr-only peer-hover:not-sr-only">
-		<ul class="bg-bg p-2 pt-px">
-			{%for lang in langs%}
-				<li lang="{{lang[0]}}"><a href="/{{lang[0]}}/">{{lang[1].name}}<a></li>
-			{%endfor%}
-		</ul>
-	</nav>
-	</button>
-
-</header>
-<main>
-	<article class="grid grid-rows-[max-content_auto] grid-cols-[1fr_3fr] h-full">
-		<header class="col-span-2 max-h-max">
-			<h1>{{-name[lang]-}}</h1>
-			<p>{{-kicker[lang]-}}</p>
+<article class="grid grid-rows-[max-content_auto] grid-cols-[1fr_3fr] h-full">
+	<header class="col-span-2 max-h-max">
+		<h1>{{-name[lang]-}}</h1>
+		<p>{{-kicker[lang]-}}</p>
+	</header>
+	<section>
+		<header>
+			<h2>Education</h2>
 		</header>
-		<section>
-			<header>
-				<h2>Education</h2>
-			</header>
-		</section>
-		<section>
-		</section>
-	</article>
-</main>
-<footer class="print:hidden text-center">
-	&copy; Kevin Samuel 2025
-</footer>
+	</section>
+	<section>
+	</section>
+</article>
