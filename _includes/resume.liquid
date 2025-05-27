@@ -2,10 +2,20 @@
 layout: page.liquid
 ---
 
-<article class="grid grid-rows-[max-content_auto] grid-cols-[1fr_3fr] h-full">
-	<header class="col-span-2 max-h-max">
-		<h1>{{-name[lang]-}}</h1>
-		<p>{{-kicker[lang]-}}</p>
+<article class="grid p-2 md:p-4 grid-rows-[max-content_auto] gap-2 grid-cols-[1fr_3fr] h-full">
+	<header class="col-span-2 max-h-max grid md:grid-cols-[3fr_1fr] gap-2">
+		<h1 class="text-4xl font-bold">{{-name[lang]-}}</h1>
+		<p class="row-start-2">{{-kicker[lang]-}}</p>
+		<ul class="text-right row-span-2">
+			{%for social in socials-%}
+				<li class="underline">
+					<a target="_blank" referrerpolicy="no-referrer"
+						class="text-wrap"
+						href="{{social[1].link}}">
+						{{social[1].text}}
+					</a></li>
+			{%-endfor%}
+		</ul>
 	</header>
 	<section>
 		<header>
