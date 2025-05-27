@@ -2,7 +2,10 @@
 layout: page.liquid
 ---
 
-<article class="grid p-2 md:p-4 grid-rows-[max-content_auto] gap-2 grid-cols-[1fr_3fr] h-full">
+{%contentid%}
+{{messages.cv[lang]}}
+{%endcontentid%}
+<article id="{{messages.cv[lang]}}" class="grid p-2 md:p-4 grid-rows-[max-content_auto] gap-2 grid-cols-[1fr_3fr] h-full">
 	<header class="col-span-2 max-h-max grid md:grid-cols-[3fr_1fr] gap-2">
 		<h1 class="text-4xl font-bold">{{-name[lang]-}}</h1>
 		<p class="row-start-2">{{-kicker[lang]-}}</p>

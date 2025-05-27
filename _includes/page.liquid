@@ -1,6 +1,16 @@
 ---
 layout: base.liquid
 ---
+{%-capture contentid-%}
+	{%-getBundle "contentid"-%}
+{%-endcapture-%}
+{%if contentid%}
+<a class="sr-only focus:not-sr-only focus:absolute bg-bg"
+   href="#{{-contentid-}}">
+	{{messages.skip[lang]}}
+</a>
+{%endif%}
+
 <aside title="{{-name[lang]-}}" class="relative left-0 top-0 print:hidden items-center justify-end flex text-sm">
 	<button class="px-3 h-full">{{-messages.print[lang]-}}</button>
 	<button class="px-3 h-full">{{-messages.download[lang]-}}</button>

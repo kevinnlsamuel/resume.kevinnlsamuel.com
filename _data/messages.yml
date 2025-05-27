@@ -7,3 +7,9 @@ download:
 chooselang:
   en: Choose language
   fr: Chosir la langue
+skip:
+  en: Skip to content
+  fr: Aller au contenu
+cv:
+  en: resume
+  fr: cv
