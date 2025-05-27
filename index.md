@@ -9,14 +9,13 @@ location.replace(`/${lang}/`)
 </script>
 {% endautoredirect %}
 
-<noscript>
-    <div class="w-14 lg:w-32 mx-auto grid rows-1 h-screen items-center">
-    {%-render
-    'langswitcher.liquid',
-    langs: langs,
-    lang: lang,
-    open: 'true'
-    -%}
-    </div>
+<noscript class="place-self-center row-span-2">
+    <nav class="border rounded border-primary">
+        <ul>
+        {%-for lang in langs-%}
+            <li class="p-4"><a href="/{{lang[0]}}">{{lang[1].name}}</a></li>
+        {%-endfor-%}
+        <ul>
+    </nav>
 </noscript>
 
