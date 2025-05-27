@@ -2,9 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
-@media(prefers-color-scheme: dark){
-	:root{
-		@apply text-white;
-		@apply bg-black;
+
+:root{
+	--bg: 255 255 255;
+	--fg: 0 0 0;
+	@apply text-fg;
+	@apply bg-bg;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--bg: 0 0 0;
+		--fg: 255 255 255;
 	}
 }

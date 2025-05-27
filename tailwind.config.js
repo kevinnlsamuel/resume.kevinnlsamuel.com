@@ -7,6 +7,8 @@ export default {
 		colors: {
 			primary: colors.violet[500],
 			secondary: colors.amber[400],
+			bg: 'rgb(var(--bg))',
+			fg: 'rgb(var(--fg))',
 		},
 	},
   },
