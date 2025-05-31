@@ -1,0 +1,16 @@
+<article>
+	<header>
+	<h3 class="font-bold">{{x.title}}</h3>
+	<p class="text-md">{{x.description}}</p>
+	</header>
+
+	<p class="text-md">{{x.organisation}} | {{x.location}}</p>
+	{%if end%}
+		<p class="text-md">{{x.start}}&ndash;{{x.end}}</p>
+	{%else%}
+		<p class="text-md">
+		{{-messages.since[lang]}} {{x.start-}}
+		</p>
+	{%endunless%}
+
+</article>
