@@ -12,14 +12,20 @@ contacts:
     link: https://kevinnlsamuel.com
 sns:
   LinkedIn:
-    text: linkedin/k
+    text: 
     link: https://in.linkedin.com/in/kevinnlsamuel
   Twitch:
-    text: twitch.tv/knls
+    text: 
     link: https://www.twitch.tv/kevinnlsamuel
   GitHub:
-    text: github.com/knls
+    text: 
     link: https://github.com/kevinnlsamuel
   X (formerly Twitter):
-    text: twitter
+    text: 
     link: https://x.com/kevinnlsamuel
+  YouTube:
+    text: 
+    link: https://youtube.com/@kevinnlsamuel
+  StackOverflow:
+    text: 
+    link: https://stackoverflow.com/users/13982210/kevinnls
