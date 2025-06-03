@@ -13,7 +13,10 @@ skip:
 cv:
   en: resume
   fr: cv
-socials:
+sns:
+  en: On social media
+  fr: Sur les résaux sociaux
+contactme:
   en: Get in touch
   fr: Pour me contacter
 toolbar:
@@ -31,3 +34,6 @@ certification:
 since:
   en: Since
   fr: Depuis
+on:
+  en: on
+  fr: sur

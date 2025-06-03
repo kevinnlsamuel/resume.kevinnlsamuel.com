@@ -1,21 +1,25 @@
-tel:
-  obfuscate: true
-  text: +91 not showing this for now
-  link: tel:+910000000000
-email:
-  obfuscate: true
-  text: hahahahah@kevinnlsamuel.com
-  link: mailto:hahahahah@kevinnlsamuel.com
-website:
-  text: kevinnlsamuel.com
-  link: https://kevinnlsamuel.com
-social:
-  linkedin:
-    text:
+contacts:
+  tel:
+    obfuscate: true
+    text: +91 not showing this for now
+    link: tel:+910000000000
+  email:
+    obfuscate: true
+    text: hahahahah@kevinnlsamuel.com
+    link: mailto:hahahahah@kevinnlsamuel.com
+  website:
+    text: kevinnlsamuel.com
+    link: https://kevinnlsamuel.com
+sns:
+  LinkedIn:
+    text: linkedin/k
     link: https://in.linkedin.com/in/kevinnlsamuel
-  twitch:
-    text:
+  Twitch:
+    text: twitch.tv/knls
     link: https://www.twitch.tv/kevinnlsamuel
-  github:
-    text: 
+  GitHub:
+    text: github.com/knls
     link: https://github.com/kevinnlsamuel
+  X (formerly Twitter):
+    text: twitter
+    link: https://x.com/kevinnlsamuel
