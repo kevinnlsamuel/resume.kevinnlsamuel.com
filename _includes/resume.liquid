@@ -30,9 +30,10 @@ layout: page.liquid
 			</p>
 			<ul>
 				{%for social in socials.sns-%}
-					<li class="underline">
+					<li>
 						<a target="_blank"
 						   referrerpolicy="no-referrer"
+						   class="fa"
 						   aria-label="{{social[0]}}"
 						   title="{{social[0]}}"
 						   href="{{social[1].link}}">

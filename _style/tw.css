@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+	font-family: "fa";
+	font-display: block;
+	src:	local("Font Awesome 6 Free"),
+			url("/assets/fa6-free.brands.woff2");
+}
+
+.fa {
+	font-family: "fa";
+}
 
 :root{
 	--bg: 255 255 255;
