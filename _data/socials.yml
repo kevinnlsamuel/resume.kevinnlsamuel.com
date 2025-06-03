@@ -9,13 +9,13 @@ email:
 website:
   text: kevinnlsamuel.com
   link: https://kevinnlsamuel.com
-linkedin:
-  text: LinkedIn/kevinnlsamuel
-  link: https://in.linkedin.com/in/kevinnlsamuel
-github:
-  text: GitHub/kevinnls
-  link: https://github.com/kevinnls
-twitch:
-  text: Twitch/kevinnlsamuel
-  link: https://www.twitch.tv/kevinnlsamuel
-
+social:
+  linkedin:
+    text:
+    link: https://in.linkedin.com/in/kevinnlsamuel
+  twitch:
+    text:
+    link: https://www.twitch.tv/kevinnlsamuel
+  github:
+    text: 
+    link: https://github.com/kevinnlsamuel
