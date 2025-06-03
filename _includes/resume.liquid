@@ -23,14 +23,16 @@ layout: page.liquid
 				{%-endfor%}
 			</ul>
 		</address>
-		<aside class="text-right order-4 grid grid-flow-col gap-2">
+		<aside class="text-right order-4 flex justify-end gap-2">
 			<p class="self-center">
-				@kevinnlsamuel<br/>
+				@kevinnlsamuel
 				<span class="text-sm">{{messages.on[lang]}}</span>
 			</p>
-			<ul>
-				{%for social in socials.sns-%}
-					<li>
+			<ul class="grid gap-2 auto-cols-min">
+				{%for row in socials.sns-%}
+					{%assign rowindex = forloop.index%}
+					{%for social in row-%}
+						<li style="grid-row-start: {{rowindex}}" >
 						<a target="_blank"
 						   referrerpolicy="no-referrer"
 						   class="fa"
@@ -39,6 +41,7 @@ layout: page.liquid
 						   href="{{social[1].link}}">
 							{{social[1].text}}
 						</a></li>
+					{%endfor%}
 				{%-endfor%}
 			</ul>
 		</aside>

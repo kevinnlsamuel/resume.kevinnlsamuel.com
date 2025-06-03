@@ -11,21 +11,24 @@ contacts:
     text: kevinnlsamuel.com
     link: https://kevinnlsamuel.com
 sns:
-  LinkedIn:
-    text: 
-    link: https://in.linkedin.com/in/kevinnlsamuel
-  Twitch:
-    text: 
-    link: https://www.twitch.tv/kevinnlsamuel
-  GitHub:
-    text: 
-    link: https://github.com/kevinnlsamuel
-  X (formerly Twitter):
-    text: 
-    link: https://x.com/kevinnlsamuel
-  YouTube:
-    text: 
-    link: https://youtube.com/@kevinnlsamuel
-  StackOverflow:
-    text: 
-    link: https://stackoverflow.com/users/13982210/kevinnls
+  - 
+    LinkedIn:
+      text: 
+      link: https://in.linkedin.com/in/kevinnlsamuel
+    X (formerly Twitter):
+      text: 
+      link: https://x.com/kevinnlsamuel
+  -
+    Twitch:
+      text: 
+      link: https://www.twitch.tv/kevinnlsamuel
+    YouTube:
+      text: 
+      link: https://youtube.com/@kevinnlsamuel
+  -
+    GitHub:
+      text: 
+      link: https://github.com/kevinnlsamuel
+    StackOverflow:
+      text: 
+      link: https://stackoverflow.com/users/13982210/kevinnls
