@@ -1,4 +1,4 @@
-.PHONY: setup sh
+.PHONY: dev build setup sh
 
 PROJECT = resume
 
