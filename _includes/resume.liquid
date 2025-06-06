@@ -7,7 +7,7 @@ layout: page.liquid
 {%endcontentid%}
 <article id="{{messages.cv[lang]}}" class="grid p-2 md:p-4 grid-rows-[max-content_auto] gap-2 grid-cols-[1fr_3fr] h-full">
 	<header class="col-span-2 max-h-max
-		grid md:grid-cols-[3fr_2fr] gap-2">
+		grid md:grid-cols-[3fr_2fr] print:grid-cols-[3fr_2fr] gap-2">
 		<h1 class="text-4xl font-bold">{{-name[lang]-}}</h1>
 		<p class="order-3">{{-kicker[lang]-}}</p>
 		<address class="not-italic order-2">
@@ -23,16 +23,16 @@ layout: page.liquid
 				{%-endfor%}
 			</ul>
 		</address>
-		<aside class="text-right order-4 flex justify-end gap-2">
-			<p class="self-center">
+		<aside class="text-right order-4 grid auto-rows-min gap-2">
+			<p>
 				@kevinnlsamuel
 				<span class="text-sm">{{messages.on[lang]}}</span>
 			</p>
-			<ul class="grid gap-2 auto-cols-min">
+			<ul class="grid gap-x-4 grid-flow-col justify-end auto-cols-min">
 				{%for row in socials.sns-%}
 					{%assign rowindex = forloop.index%}
 					{%for social in row-%}
-						<li style="grid-row-start: {{rowindex}}" >
+						<li style="grid-column-start: {{rowindex}}" >
 						<a target="_blank"
 						   referrerpolicy="no-referrer"
 						   class="fa"
