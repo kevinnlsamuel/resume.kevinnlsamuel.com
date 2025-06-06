@@ -11,7 +11,7 @@ export default function(eleventyConfig) {
 	});
 	eleventyConfig.setServerPassthroughCopyBehavior("passthrough");
 	eleventyConfig.addPassthroughCopy({
-		"./node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400.woff2": "/assets/fa6-free.brands.woff2"})
+		"./node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400.woff2": "assets/fa6-free.brands.woff2"})
 	if (process.env['NODE_ENV'] === 'production'){
 		eleventyConfig.addGlobalData("production", true);
 	} else {
