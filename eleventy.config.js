@@ -21,6 +21,12 @@ export default function(eleventyConfig) {
 	eleventyConfig.addDataExtension("yml,yaml", (data) => {
 		return parseYaml(data);
 	})
+	eleventyConfig.addLiquidFilter("fmtDate", function(date, lang){
+		return new Intl.DateTimeFormat(lang, {
+			month: "long",
+			year: "numeric",
+		}).format(date)
+	})
 
 	for (const lang in langs) {
 		eleventyConfig.addTemplate(
