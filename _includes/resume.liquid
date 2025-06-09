@@ -52,7 +52,7 @@ layout: page.liquid
 	<section class="grid gap-2">
 		<section class="rounded bg-secondary">
 			<h2>{{messages.experience[lang]}}</h2>
-			{%render 'card.liquid' with experience.hisk[lang] as x, lang: lang, messages: messages%}
+			{%include './_includes/card.liquid', exp_code: 'hisk'%}
 		</section>
 		<section class="rounded bg-secondary">
 			<h2>{{messages.education[lang]}}</h2>

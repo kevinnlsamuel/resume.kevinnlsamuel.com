@@ -1,3 +1,4 @@
+{%assign x = experience[exp_code][lang]%}
 <article>
 	<header>
 	<h3 class="font-bold">{{x.title}}</h3>
@@ -6,10 +7,10 @@
 
 	<p class="text-md">{{x.organisation}} | {{x.location}}</p>
 	{%if end%}
-		<p class="text-md">{{x.start}}&ndash;{{x.end}}</p>
+		<p class="text-md">{{x.start | fmtDate: lang}}&ndash;{{x.end | fmtDate: lang}}</p>
 	{%else%}
 		<p class="text-md">
-		{{-messages.since[lang]}} {{x.start-}}
+		{{-messages.since[lang]}} {{x.start | fmtDate: lang-}}
 		</p>
 	{%endif%}
 
