@@ -1,11 +1,12 @@
 {%assign x = experience[exp_code][lang]%}
-<article class="grid grid-cols-[2fr_3fr] gap-px">
+<article class="p-2">
 	<header class="col-span-2">
 		<h3 class="font-bold">{{x.org}}</h3>
-		<p class="text-md">{{x.title}}</p>
-	</header>
-	<section>
-			<p>{{x.location}}</p>
+	<section class="flex justify-between items-center">
+		<p class="text-md">{{x.title}}<br />
+		{{x.location}}
+		</p>
+		<p></p>
 		{%if x.end%}
 			<p class="text-md">{{x.start | fmtDate: lang}}&ndash;{{x.end | fmtDate: lang}}</p>
 		{%else%}
@@ -13,10 +14,10 @@
 			{{-messages.since[lang]}} {{x.start | fmtDate: lang-}}
 			</p>
 		{%endif%}
-		</p>
 	</section>
+	</header>
 	<section>
-		<ul class="list-disc mx-5">
+		<ul class="list-disc list-inside indent-2">
 			{%for item in x.list%}
 				<li>{{-item-}}</li>
 			{%endfor%}
