@@ -1,12 +1,20 @@
+base: &base
+  start: 2025-05-28
+  end: 2025-04-31
 en:
+  <<: *base
   title: Part-time French Teacher
   description: Taught French as a foreign language in the primary section
   organisation: Hindustan International School [CBSE], Karapakkam
-  start: 2025-05-28
-  end: 2025-04-31
   location: Chennai, India
   list:
     - Devised a tailored syllabus for the primary section based on direct interation
     - Undertook instruction, evaluation and review regularly
   x_list:
     - Proofread monthly newsletter in English
+fr:
+  <<: *base
+  title: Professeur de français langue étrangère à temps partiel
+  description: Enseignant du FLE au niveau élémentaire
+  organisation: Hindustan International School [CBSE], Karapakkam
+
