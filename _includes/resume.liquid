@@ -5,12 +5,16 @@ layout: page.liquid
 {%contentid%}
 {{messages.cv[lang]}}
 {%endcontentid%}
-<article id="{{messages.cv[lang]}}" class="grid p-2 md:p-4 grid-rows-[max-content_auto] gap-2 grid-cols-[1fr_3fr] h-full">
-	<header class="col-span-2 max-h-max grid-flow-col
+<article id="{{messages.cv[lang]}}"
+		 class="h-full p-2 md:p-4
+				grid gap-2
+				grid-rows-[max-content_auto]
+				md:grid-cols-[1fr_3fr]">
+	<header class="md:col-span-2 max grid-flow-row md:grid-flow-col
 		grid md:grid-cols-[3fr_2fr] print:grid-cols-[3fr_2fr]">
 		<h1 class="text-4xl font-bold">{{-name[lang]-}}</h1>
 		<p class="">{{-kicker[lang]-}}</p>
-		<address class="not-italic row-span-2 pl-2 border-l-4 border-primary">
+		<address class="not-italic md:row-span-2 pl-2 md:border-l-4 border-primary">
 			<ul title="{{-messages.contactme[lang]-}}"
 				class="flex flex-col text-right">
 				{%for contact in socials.contacts-%}
@@ -47,17 +51,17 @@ layout: page.liquid
 			</aside>
 		</address>
 	</header>
-	<section>
+	<section> oi
 	</section>
-	<section class="grid gap-2">
-		<section class="rounded bg-secondary">
+	<section class="grid">
+		<section class="rounded">
 			<h2>{{messages.experience[lang]}}</h2>
 			{%include './_includes/card.liquid', exp_code: 'hisk'%}
 		</section>
-		<section class="rounded bg-secondary">
+		<section class="rounded">
 			<h2>{{messages.education[lang]}}</h2>
 		</section>
-		<section class="rounded bg-secondary">
+		<section class="rounded">
 			<h2>{{messages.certification[lang]}}</h2>
 		</section>
 	</section>
