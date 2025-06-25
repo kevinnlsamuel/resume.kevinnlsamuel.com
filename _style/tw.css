@@ -3,14 +3,23 @@
 @tailwind utilities;
 
 @font-face {
-	font-family: "fa";
+	font-family: "fas";
 	font-display: block;
-	src:	local("Font Awesome 6 Free"),
+	src:	url("/assets/fa6-free.solid.woff2");
+}
+
+@font-face {
+	font-family: "fab";
+	font-display: block;
+	src:	local("Font Awesome 6 Brands"),
 			url("/assets/fa6-free.brands.woff2");
 }
 
 .fa {
-	font-family: "fa";
+	font-family: "fab";
+}
+.fapseudo::before, .fapseudo::after {
+	font-family: "fas";
 }
 
 :root{
