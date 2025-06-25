@@ -3,25 +3,25 @@
 @tailwind utilities;
 
 @font-face {
-	font-family: "fas";
+	font-family: "fa";
 	font-display: block;
-	src:	url("/assets/fa6-free.solid.woff2");
+	font-weight: 900;
+	src:	local("Font Awesome 6 Free"),
+			url("/assets/fa6-free.solid.woff2");
 }
 
 @font-face {
-	font-family: "fab";
+	font-family: "fa";
 	font-display: block;
+	font-weight: 400;
 	src:	local("Font Awesome 6 Brands"),
 			url("/assets/fa6-free.brands.woff2");
 }
 
-.fa {
-	font-family: "fab";
-}
-
 [class*="content-fa-"]::before,
-[class*="content-fa-"]::after
-{ font-family: "fas"; }
+[class*="content-fa-"]::after {
+	font-family: "fa"; font-weight: 900
+}
 
 :root{
 	--bg: 255 255 255;

@@ -10,6 +10,9 @@ export default {
 			bg: 'rgb(var(--bg))',
 			fg: 'rgb(var(--fg))',
 		},
+		fontFamily: {
+			'fa': ['fa']
+		},
 		content: {
 			'fa-pin': '"\\f041"',
 			'fa-pindot': '"\\f3c5"',
