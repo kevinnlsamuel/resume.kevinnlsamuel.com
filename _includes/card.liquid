@@ -4,10 +4,10 @@
 		<h3 class="font-bold">{{x.org}}</h3>
 	<section class="flex justify-between items-center">
 		<h4>{{x.title}}</h4>
-		<p class="before:content-pindot fapseudo text-md">
+		<p class="before:content-fa-pindot text-md">
 		{{x.location}}
 		</p>
-			<p class="text-md before:content-calendar fapseudo">
+			<p class="text-md before:content-fa-calendar">
 				{%if x.end%}
 					{{x.start | fmtDate: lang}}&ndash;{{x.end | fmtDate: lang}}
 				{%else%}

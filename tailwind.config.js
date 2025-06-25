@@ -11,9 +11,9 @@ export default {
 			fg: 'rgb(var(--fg))',
 		},
 		content: {
-			pin: '"\\f041"',
-			pindot: '"\\f3c5"',
-			calendar: '"\\f073"',
+			'fa-pin': '"\\f041"',
+			'fa-pindot': '"\\f3c5"',
+			'fa-calendar': '"\\f073"',
 		},
 	},
   },

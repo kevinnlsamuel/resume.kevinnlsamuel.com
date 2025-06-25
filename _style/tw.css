@@ -18,9 +18,10 @@
 .fa {
 	font-family: "fab";
 }
-.fapseudo::before, .fapseudo::after {
-	font-family: "fas";
-}
+
+[class*="content-fa-"]::before,
+[class*="content-fa-"]::after
+{ font-family: "fas"; }
 
 :root{
 	--bg: 255 255 255;
