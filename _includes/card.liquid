@@ -4,17 +4,16 @@
 		<h3 class="font-bold">{{x.org}}</h3>
 	<section class="flex justify-between items-center">
 		<h4>{{x.title}}</h4>
-		<p class="before:content-['\F3C5'] fapseudo text-md">
+		<p class="before:content-pindot fapseudo text-md">
 		{{x.location}}
 		</p>
-		<p></p>
-		{%if x.end%}
-			<p class="text-md">{{x.start | fmtDate: lang}}&ndash;{{x.end | fmtDate: lang}}</p>
-		{%else%}
-			<p class="text-md">
-			{{-messages.since[lang]}} {{x.start | fmtDate: lang-}}
+			<p class="text-md before:content-calendar fapseudo">
+				{%if x.end%}
+					{{x.start | fmtDate: lang}}&ndash;{{x.end | fmtDate: lang}}
+				{%else%}
+					{{-messages.since[lang]}} {{x.start | fmtDate: lang-}}
+				{%endif%}
 			</p>
-		{%endif%}
 	</section>
 	</header>
 	<section>

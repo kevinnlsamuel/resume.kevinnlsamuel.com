@@ -10,6 +10,11 @@ export default {
 			bg: 'rgb(var(--bg))',
 			fg: 'rgb(var(--fg))',
 		},
+		content: {
+			pin: '"\\f041"',
+			pindot: '"\\f3c5"',
+			calendar: '"\\f073"',
+		},
 	},
   },
   plugins: [],
