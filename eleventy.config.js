@@ -29,6 +29,11 @@ export default function(eleventyConfig) {
 			year: "numeric",
 		}).format(date)
 	})
+	eleventyConfig.addLiquidFilter("machineDate", function(date){
+		const m = date.getMonth().toString().padStart(2, "0")
+		const y = date.getFullYear().toString()
+		return `${y}-${m}`
+	})
 
 	for (const lang in langs) {
 		eleventyConfig.addTemplate(
