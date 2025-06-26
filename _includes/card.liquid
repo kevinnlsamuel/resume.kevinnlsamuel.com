@@ -1,21 +1,43 @@
 {%assign x = experience[exp_code][lang]%}
-<article class="p-2">
-	<header class="col-span-2">
-		<h3 class="font-bold">{{x.org}}</h3>
-	<section class="flex justify-between items-center">
-		<h4>{{x.title}}</h4>
-		<p class="before:content-fa-pindot text-md">
-		{{x.location}}
-		</p>
-			<p class="text-md before:content-fa-calendar">
-				{%if x.end%}
-					{{x.start | fmtDate: lang}}&ndash;{{x.end | fmtDate: lang}}
+<article class="p-2 bg-bg">
+
+	<h3 class="font-bold col-span-2">{{x.org}}</h3>
+
+	<section class="grid">
+
+		<h4 class="">{{x.title}}
+			{%-if x.dept-%}
+				<span class="md:ml-2 md:pl-2 md:border-l-2 border-l-primary">{{x.dept}}</span>
+			{%-endif-%}
+		</h4>
+
+		<p class="space-x-2">
+			<span class="text-md before:text-slate-600 before:mr-px before:content-fa-calendar">
+				{%if x.end-%}
+					<time datetime="{{-x.start | machineDate-}}">
+						{{-x.start | fmtDate: lang-}}
+					</time>
+					<span aria-label="{{-messages.to[lang]-}}">&ndash;</span>
+					<time datetime="{{-x.end | machineDate-}}">
+						{{-x.end | fmtDate: lang-}}
+					</time>
 				{%else%}
-					{{-messages.since[lang]}} {{x.start | fmtDate: lang-}}
-				{%endif%}
-			</p>
+					{{-messages.since[lang]-}}
+					<time datetime="{{x.start | machineDate}}">
+						{{x.start | fmtDate: lang-}}
+					</time>
+				{%-endif-%}
+			</span>
+
+			<span class="text-md before:text-slate-600 before:mr-px before:content-fa-pindot">
+				{{x.location}}
+			</span>
+		</p>
+
 	</section>
-	</header>
+	<!--
+	<section class="flex justify-between items-center">
+	</section>
 	<section>
 		<ul class="list-disc list-inside indent-2">
 			{%for item in x.list%}
@@ -23,5 +45,6 @@
 			{%endfor%}
 		</ul>
 	</section>
+	-->
 
 </article>
