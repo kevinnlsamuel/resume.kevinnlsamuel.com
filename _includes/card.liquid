@@ -3,7 +3,7 @@
 
 	<header>
 	<h3 class="float-left font-bold w-max text-lg">{{x.org}}</h3>
-	<p class="text-md text-right before:text-slate-600 before:mr-px before:content-fa-calendar">
+	<p class="text-md text-right">
 		{%if x.end-%}
 			<time datetime="{{-x.start | machineDate-}}">
 				{{-x.start | fmtDate: lang-}}
@@ -21,7 +21,7 @@
 	</p>
 	</header>
 
-	<section class="grid clear-left">
+	<section class="grid clear-both">
 
 		<h4 class="">{{x.title}}
 			{%-if x.dept-%}
