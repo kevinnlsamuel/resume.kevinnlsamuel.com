@@ -2,8 +2,7 @@
 <article class="p-2 bg-bg">
 
 	<header>
-	<h3 class="float-left font-bold w-max text-lg">{{x.org}}</h3>
-	<p class="text-md text-right">
+		<p class="text-md text-right float-right">
 		{%if x.end-%}
 			<time datetime="{{-x.start | machineDate-}}">
 				{{-x.start | fmtDate: lang-}}
@@ -18,28 +17,18 @@
 				{{x.start | fmtDate: lang-}}
 			</time>
 		{%-endif-%}
-	</p>
+		<br/>
+		<span class="text-md before:text-slate-600 before:ml-px before:content-fa-pindot">
+		{{x.location}}
+		</span>
+		</p>
+		<h3 class="font-bold w-max text-lg">{{x.org}}</h3>
+		<h4 class="font-bold text-lg clear-right float-right w-max">{{x.title}} </h4>
+		{%-if x.dept-%}
+			<p>{{x.dept}}</p>
+		{%-endif-%}
 	</header>
 
-	<section class="grid clear-both">
-
-		<h4 class="">{{x.title}}
-			{%-if x.dept-%}
-				<span class="md:ml-2 md:pl-2 md:border-l-2
-							 print:ml-2 print:pl-2 print:border-l-2
-							border-l-primary">
-					{{x.dept}}
-				</span>
-			{%-endif-%}
-		</h4>
-
-		<p class="space-x-2">
-			<span class="text-md before:text-slate-600 before:mr-px before:content-fa-pindot">
-				{{x.location}}
-			</span>
-		</p>
-
-	</section>
 	<section>
 		<ul class="ml-4 list-disc list-outside indent-2">
 			{%for item in x.list%}
