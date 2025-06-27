@@ -15,8 +15,8 @@ en:
     - Proofread monthly newsletter in English
 fr:
   <<: *base
-  dept: Campus à Karapakkam [Cursus CBSE]
-  title: Professeur de français langue étrangère à temps partiel
+  dept: Division CBSE à Karapakkam
+  title: Professeur de français langue étrangère
   description: Enseignant du FLE au niveau élémentaire
   location: Chennaï, Inde
 
