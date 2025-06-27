@@ -1,50 +1,51 @@
 {%assign x = experience[exp_code][lang]%}
 <article class="p-2 bg-bg">
 
-	<h3 class="font-bold col-span-2">{{x.org}}</h3>
+	<header>
+	<h3 class="float-left font-bold w-max text-lg">{{x.org}}</h3>
+	<p class="text-md text-right before:text-slate-600 before:mr-px before:content-fa-calendar">
+		{%if x.end-%}
+			<time datetime="{{-x.start | machineDate-}}">
+				{{-x.start | fmtDate: lang-}}
+			</time>
+			<span aria-label="{{-messages.to[lang]-}}">&ndash;</span>
+			<time datetime="{{-x.end | machineDate-}}">
+				{{-x.end | fmtDate: lang-}}
+			</time>
+		{%else%}
+			{{-messages.since[lang]-}}
+			<time datetime="{{x.start | machineDate}}">
+				{{x.start | fmtDate: lang-}}
+			</time>
+		{%-endif-%}
+	</p>
+	</header>
 
-	<section class="grid">
+	<section class="grid clear-left">
 
 		<h4 class="">{{x.title}}
 			{%-if x.dept-%}
-				<span class="md:ml-2 md:pl-2 md:border-l-2 border-l-primary">{{x.dept}}</span>
+				<span class="md:ml-2 md:pl-2 md:border-l-2
+							 print:ml-2 print:pl-2 print:border-l-2
+							border-l-primary">
+					{{x.dept}}
+				</span>
 			{%-endif-%}
 		</h4>
 
 		<p class="space-x-2">
-			<span class="text-md before:text-slate-600 before:mr-px before:content-fa-calendar">
-				{%if x.end-%}
-					<time datetime="{{-x.start | machineDate-}}">
-						{{-x.start | fmtDate: lang-}}
-					</time>
-					<span aria-label="{{-messages.to[lang]-}}">&ndash;</span>
-					<time datetime="{{-x.end | machineDate-}}">
-						{{-x.end | fmtDate: lang-}}
-					</time>
-				{%else%}
-					{{-messages.since[lang]-}}
-					<time datetime="{{x.start | machineDate}}">
-						{{x.start | fmtDate: lang-}}
-					</time>
-				{%-endif-%}
-			</span>
-
 			<span class="text-md before:text-slate-600 before:mr-px before:content-fa-pindot">
 				{{x.location}}
 			</span>
 		</p>
 
 	</section>
-	<!--
-	<section class="flex justify-between items-center">
-	</section>
 	<section>
-		<ul class="list-disc list-inside indent-2">
+		<ul class="ml-4 list-disc list-outside indent-2">
 			{%for item in x.list%}
 				<li>{{-item-}}</li>
 			{%endfor%}
 		</ul>
 	</section>
-	-->
 
 </article>
