@@ -1,7 +1,7 @@
 {%assign x = experience[exp_code][lang]%}
-<article class="p-2 bg-bg">
+<article class="p-2 bg-bg last-of-type:border-b-0 border-b-2 border-b-primary">
 
-	<header class="flow-root">
+	<header class="flow-root pl-px pb-px thatonefancyborder from-secondary to-60%">
 		<p class="text-md text-right float-right">
 		{%if x.end-%}
 			<time datetime="{{-x.start | machineDate-}}">
@@ -17,16 +17,15 @@
 				{{x.start | fmtDate: lang-}}
 			</time>
 		{%-endif-%}
-		<br/>
-		<span class="text-md before:text-slate-600 before:ml-px before:content-fa-pindot">
-		{{x.location}}
-		</span>
 		</p>
 		<h3 class="font-bold w-max text-lg">{{x.org}}</h3>
 		<h4 class="font-bold text-lg clear-right float-right w-max">{{x.title}} </h4>
 		{%-if x.dept-%}
 			<p>{{x.dept}}</p>
 		{%-endif-%}
+		<p class="text-md before:text-slate-600 before:ml-px before:content-fa-pindot">
+		{{x.location}}
+		</p>
 	</header>
 
 	<section>

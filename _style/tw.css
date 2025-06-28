@@ -36,3 +36,9 @@
 		--fg: 255 255 255;
 	}
 }
+
+.thatonefancyborder {
+	border-image-source: linear-gradient(to right, var(--tw-gradient-stops));
+	border-image-slice: 0 0 100% 0;
+	border-image-width: 1px;
+}
