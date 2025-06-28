@@ -71,16 +71,16 @@ layout: page.liquid
 			<h3>Hobbies</h3>
 		</section>
 	</section>
-	<section class="grid">
+	<section class="flex flex-col justify-between">
 		<section class="rounded bg-primary">
 			<h2>{{messages.experience[lang]}}</h2>
 			{%include './_includes/card.liquid', exp_code: 'hisk'%}
 			{%include './_includes/card.liquid', exp_code: '2024-ccd'%}
 		</section>
-		<section class="rounded">
+		<section class="rounded bg-primary">
 			<h2>{{messages.education[lang]}}</h2>
 		</section>
-		<section class="rounded">
+		<section class="rounded bg-primary">
 			<h2>{{messages.certification[lang]}}</h2>
 		</section>
 	</section>
