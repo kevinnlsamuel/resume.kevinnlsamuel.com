@@ -1,0 +1,22 @@
+base: &base
+  org: Café Coffee Day
+  start: 2024-05-27
+  end: 2024-06-27
+en:
+  <<: *base
+  location: Chennai, India
+  title: Temporary Worker
+  list:
+    - Prepared food and beverages
+    - Served customers
+    - Handled billing
+    - Undertook all closing procedures
+fr:
+  <<: *base
+  location: Chennaï, Inde
+  title: Travailleur temporaire
+  list:
+    - Préparation les plats et boissons
+    - Le service aux client.e.s
+    - Ménage de caisse
+    - La fermature du café
