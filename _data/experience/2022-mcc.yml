@@ -4,8 +4,11 @@ base: &base
   org: Madras Christian College
 en:
   <<: *base
-  title: Bachelor of Arts in English Language and Literature
+  title: Bachelor of Arts
+  subtitle: English Language and Literature
   location: Chennai, India
 fr:
   <<: *base
   location: Chennaï, Inde
+  title: Licence d'Arts
+  subtitle: Langue et littérature anglaise

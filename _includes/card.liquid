@@ -1,18 +1,18 @@
 {%assign x = experience[exp_code][lang]%}
 {%if direction == "rtl"%}
-	{%assign float = "float-left"%}
+	{%assign float = "float-left text-left"%}
 	{%assign clear = "clear-left"%}
 	{%assign align = "text-right"%}
-	{%assign bordercolourstops = "from-transparent to-secondary"%}
+	{%assign bordercolourstops = "from-bg to-secondary from-40%"%}
 {%else%}
-	{%assign float = "float-right"%}
+	{%assign float = "float-right text-right"%}
 	{%assign clear = "clear-right"%}
 	{%assign align = "text-left"%}
-	{%assign bordercolourstops = "from-secondary"%}
+	{%assign bordercolourstops = "from-secondary to-bg to-60%"%}
 {%endif%}
 <article class="p-2 bg-bg last-of-type:border-b-0 border-b-2 border-b-primary">
 
-	<header class="flow-root pl-px pb-px thatonefancyborder {{bordercolourstops}} to-60% {{align}}">
+	<header class="flow-root pl-px pb-px thatonefancyborder {{bordercolourstops}} {{align}}">
 		<p class="text-md {{float}}">
 		{%if x.end-%}
 			<time datetime="{{-x.start | machineDate-}}">
@@ -30,7 +30,9 @@
 		{%-endif-%}
 		</p>
 		<h3 class="font-bold text-lg">{{x.org}}</h3>
-		<h4 class="font-bold text-lg {{clear}} {{float}} w-max">{{x.title}} </h4>
+		<h4 class="font-bold text-lg {{clear}} {{float}} max-w-[60%]">{{x.title}}
+			{%-if x.subtitle-%}<br />{{x.subtitle}}{%-endif-%}
+		</h4>
 		{%-if x.dept-%}
 			<p>{{x.dept}}</p>
 		{%-endif-%}

@@ -4,8 +4,11 @@ base: &base
   org: English and Foreign Languages University
 en:
   <<: *base
-  title: Master of Arts in French
+  title: Master of Arts
+  subtitle: French
   location: 'Hyderabad, India'
 fr:
   <<: *base
   location: 'Hydérabad, Inde'
+  title: Master d'Arts
+  subtitle: Études françaises et francophones
