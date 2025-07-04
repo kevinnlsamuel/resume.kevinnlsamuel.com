@@ -1,6 +1,9 @@
-en:
-  name: English
-  flag: 🇬🇧
-fr:
-  name: Français
-  flag: 🇫🇷
+-
+  en: English
+  fr: l'anglais
+-
+  en: French
+  fr: le français
+-
+  en: Tamil
+  fr: le tamoul
