@@ -46,8 +46,15 @@ fluency:
     en: Bilinugual
     fr: bilingue
   pro:
-    en: Professional Fluency
-    fr: fluence professionelle
+    en: Limited professional proficiency
+    fr: capacité professionelle complète
+  limited:
+    en: Professional proficiency
+    fr: capacité professionelle limitée
+  l1:
+    en: First language
+    fr: langue natale
+
 
 languages:
   en: Languages
