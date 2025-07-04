@@ -58,14 +58,26 @@ layout: page.liquid
 		<section>
 			<h3>School Education</h3>
 		</section>
-		<section>
-			<h3>Languages</h3>
+		<section class="space-y-1">
+			<h3 class="bg-primary/40">{{messages.languages[lang]}}</h3>
+			<ul class="flex gap-2 flex-wrap">
+			{%for language in langs %}
+				<li class="rounded-xl w-fit px-2 bg-slate-400/40">{{language[lang]}}</li>
+			{%endfor%}
+			</ul>
+		</section>
+		<section class="space-y-1">
+			<h3 class="bg-primary/40">{{messages.professionalskills[lang]}}</h3>
+			<ul class="flex gap-2 flex-wrap">
+			{%for skill in skills.professional %}
+				{%if skill[lang]%}
+				<li class="rounded-xl w-fit px-2 bg-slate-400/40">{{skill[lang]}}</li>
+				{%endif%}
+			{%endfor%}
+			</ul>
 		</section>
 		<section>
-			<h3>Professional Skills</h3>
-		</section>
-		<section>
-			<h3>Technical Skills</h3>
+			<h3 class="bg-primary/40">{{messages.technicalskills[lang]}}</h3>
 		</section>
 		<section>
 			<h3>Hobbies</h3>

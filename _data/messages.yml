@@ -40,3 +40,21 @@ to:
 on:
   en: on
   fr: sur
+
+fluency:
+  bi:
+    en: Bilinugual
+    fr: bilingue
+  pro:
+    en: Professional Fluency
+    fr: fluence professionelle
+
+languages:
+  en: Languages
+  fr: Langues parlées
+professionalskills:
+  en: Professional Skills
+  fr: Compétences professionelles
+technicalskills:
+  en: Technical Skills
+  fr: Connaissances téchniques
