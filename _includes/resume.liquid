@@ -56,7 +56,10 @@ layout: page.liquid
 	</header>
 	<section class="flex flex-col h-full justify-around">
 		<section>
-			<h3>School Education</h3>
+			<h3 class="bg-primary/40">{{messages.secondaryeducation[lang]}}</h3>
+			Madras Christian College Matric. Hr. Sec. School
+			<br/>
+			SSLC 2015 95%
 		</section>
 		<section class="space-y-1">
 			<h3 class="bg-primary/40">{{messages.languages[lang]}}</h3>
@@ -76,11 +79,23 @@ layout: page.liquid
 			{%endfor%}
 			</ul>
 		</section>
-		<section>
+		<section class="space-y-1">
 			<h3 class="bg-primary/40">{{messages.technicalskills[lang]}}</h3>
+			<ul class="flex gap-2 flex-wrap">
+				{%for skill in skills.technical %}
+					<li class="rounded-xl w-fit px-2 bg-slate-400/40">{{skill}}</li>
+				{%endfor%}
+			</ul>
 		</section>
-		<section>
-			<h3>Hobbies</h3>
+		<section class="space-y-1">
+			<h3 class="bg-primary/40">{{messages.hobbies[lang]}}</h3>
+			<ul class="flex gap-2 flex-wrap">
+			{%for hobby in hobbies %}
+				{%if hobby[lang]%}
+				<li class="rounded-xl w-fit px-2 bg-slate-400/40">{{hobby[lang]}}</li>
+				{%endif%}
+			{%endfor%}
+			</ul>
 		</section>
 	</section>
 	<section class="flex flex-col justify-between">
