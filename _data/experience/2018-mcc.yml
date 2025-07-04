@@ -8,7 +8,7 @@ en:
   location: Chennai, India
   dept: Tamil Nadu State Board
   list:
-    - "Class XII (May 2018): Commerce and Computer Science with 95%"
+    - "Class XII (May 2018) Commerce and Computer Science with 95%"
     - "Class X (May 2016) with 90%"
 fr:
   <<: *base
