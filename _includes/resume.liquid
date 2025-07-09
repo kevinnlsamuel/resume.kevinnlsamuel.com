@@ -55,20 +55,6 @@ layout: page.liquid
 		</address>
 	</header>
 	<section class="flex flex-col h-full justify-around">
-		<section>
-			<h3 class="bg-primary/40">{{messages.secondaryeducation[lang]}}</h3>
-			Madras Christian College Matric. Hr. Sec. School
-			<br/>
-			SSLC 2015 95%
-		</section>
-		<section class="space-y-1">
-			<h3 class="bg-primary/40">{{messages.languages[lang]}}</h3>
-			<ul class="flex gap-2 flex-wrap">
-			{%for language in langs %}
-				<li class="rounded-xl w-fit px-2 bg-slate-400/40">{{language[lang]}}</li>
-			{%endfor%}
-			</ul>
-		</section>
 		<section class="space-y-1">
 			<h3 class="bg-primary/40">{{messages.professionalskills[lang]}}</h3>
 			<ul class="flex gap-2 flex-wrap">
@@ -85,6 +71,14 @@ layout: page.liquid
 				{%for skill in skills.technical %}
 					<li class="rounded-xl w-fit px-2 bg-slate-400/40">{{skill}}</li>
 				{%endfor%}
+			</ul>
+		</section>
+		<section class="space-y-1">
+			<h3 class="bg-primary/40">{{messages.languages[lang]}}</h3>
+			<ul class="flex gap-2 flex-wrap">
+			{%for language in langs %}
+				<li class="rounded-xl w-fit px-2 bg-slate-400/40">{{language[lang]}}</li>
+			{%endfor%}
 			</ul>
 		</section>
 		<section class="space-y-1">
@@ -108,6 +102,7 @@ layout: page.liquid
 			<h2>{{messages.education[lang]}}</h2>
 			{%include './_includes/card.liquid', exp_code: '2024-eflu', direction: 'rtl'%}
 			{%include './_includes/card.liquid', exp_code: '2022-mcc', direction: 'rtl'%}
+			{%include './_includes/card.liquid', exp_code: '2018-mcc', direction: 'rtl'%}
 		</section>
 		<section class="rounded bg-primary">
 			<h2>{{messages.certification[lang]}}</h2>
