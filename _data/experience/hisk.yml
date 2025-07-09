@@ -9,9 +9,8 @@ en:
   description: Taught French as a foreign language in the primary section
   location: Chennai, India
   list:
-    - Devised a tailored syllabus for the primary section based on direct interation
-    - Undertook instruction, evaluation and review regularly
-  x_list:
+    - Taught French as a foreign language to students aged 6 through 12
+    - Conducted regular evaluation and one-on-one review of results with students
     - Proofread monthly newsletter in English
 fr:
   <<: *base
@@ -19,4 +18,7 @@ fr:
   title: Professeur de français langue étrangère
   description: Enseignant du FLE au niveau élémentaire
   location: Chennaï, Inde
-
+  list:
+    - Énseigné le français comme langue étrangère aux élèves agé.e.s entre 6 et 12 ans
+    - Fait l'évaluation et revue indivuduelle des resultats périodiquement
+    - Relu mensuellement le magazine (anglais) de l'école

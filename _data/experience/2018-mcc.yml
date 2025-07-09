@@ -8,10 +8,19 @@ en:
   location: Chennai, India
   dept: Tamil Nadu State Board
   list:
-    - "Class XII (May 2018) Commerce and Computer Science with 95%"
-    - "Class X (May 2016) with 90%"
+    - 
+      - "May 2018: Completed Class XII with 95%"
+      - Specialised in Commerce and Computer Science
+      # - Studied French as second language
+    - "May 2018: Completed Class X with 90%"
+      # - Studied Tamil as second language
 fr:
   <<: *base
   title: Éducation primaire et sécondaire
   location: Chennaï, Inde
   list:
+    - 
+      - "mai 2018: Achèvement de diplôme de lycée"
+      - Spécialisation en commerce et en informatique
+    - "mai 2016: Achèvement de diplôme de collège"
+

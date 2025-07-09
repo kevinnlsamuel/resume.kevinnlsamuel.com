@@ -7,8 +7,14 @@ en:
   title: Bachelor of Arts
   subtitle: English Language and Literature
   location: Chennai, India
+  list:
+    - Studied the various styles of literature in English from Britain and its former colonies
+    - Introduced to theoretical analysis of literary works
 fr:
   <<: *base
   location: Chennaï, Inde
   title: Licence d'Arts
   subtitle: Langue et littérature anglaise
+  list:
+    - Études des styles litéraires en angalaise née de Grande-Bretagne et de ses anciennes colonnies
+    - Formation dans l'analyse de la littérature par le biais des théories
