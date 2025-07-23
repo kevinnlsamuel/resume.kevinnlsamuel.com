@@ -42,11 +42,11 @@
 	</header>
 
 	<main>
-		<ul class="ml-4 list-disc list-outside indent-2">
+		<ul class="ml-4 list-disc list-outside">
 			{%for item in x.list%}
 				{%if item.first%}
 					<li>{{item[0]}}
-							<ul class="list-disc marker:font-sm ml-6 indent-2">
+							<ul class="list-disc marker:font-sm ml-6">
 							{%for subitem in item offset:1 %}
 								<li>{{-subitem-}}</li>
 							{%endfor%}
