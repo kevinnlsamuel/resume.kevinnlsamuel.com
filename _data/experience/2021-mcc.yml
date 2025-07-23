@@ -1,6 +1,6 @@
 base: &base
-  start: 2018-07-02
-  end: 2021-03-30
+  start: 2018-07-13
+  end: 2021-04-30
   org: Madras Christian College
 en:
   <<: *base
@@ -8,7 +8,7 @@ en:
   subtitle: English Language and Literature
   location: Chennai, India
   list:
-    - Studied the various styles of literature in English from Britain and its former colonies
+    - Studied various literary forms and styles in English
     - Introduced to theoretical analysis of literary works
 fr:
   <<: *base
@@ -16,5 +16,5 @@ fr:
   title: Licence d'Arts
   subtitle: Langue et littérature anglaise
   list:
-    - Études des styles litéraires en angalaise née de Grande-Bretagne et de ses anciennes colonnies
-    - Formation dans l'analyse de la littérature par le biais des théories
+    - Études des styles litéraires en angalais
+    - Formation dans l'analyse théorique de la littérature

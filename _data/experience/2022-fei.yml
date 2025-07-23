@@ -1,0 +1,16 @@
+base: &base
+  start: 2021-10-01
+  end: 2022-04-30
+  location: Nantes, France
+en:
+  <<: *base
+  org: Rectory of the Academy of Nantes
+  title: English Language Assistant
+  list:
+    - Held oral interactions in English with and among French-speaking students
+    - Exposed the 
+
+fr:
+  <<: *base
+  org: Le rectorat de l'Académie de Nantes
+  title: Assistant de langue anglaise

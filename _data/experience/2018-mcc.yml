@@ -1,6 +1,6 @@
 base: &base
-  start: 2004-06-02
-  end: 2018-03-30
+  start: 2004-06-01
+  end: 2018-04-30
   org: Madras Christian College Matriculation Higher Secondary School
 en:
   <<: *base
@@ -9,10 +9,10 @@ en:
   dept: Tamil Nadu State Board
   list:
     - 
-      - "May 2018: Completed Class XII with 95%"
+      - "May 2018: Completed Class XII"
       - Specialised in Commerce and Computer Science
       # - Studied French as second language
-    - "May 2018: Completed Class X with 90%"
+    - "May 2018: Completed Class X"
       # - Studied Tamil as second language
 fr:
   <<: *base
@@ -20,7 +20,7 @@ fr:
   location: Chennaï, Inde
   list:
     - 
-      - "mai 2018: Achèvement de diplôme de lycée"
+      - "mai 2018: Achèvement du diplôme de lycée"
       - Spécialisation en commerce et en informatique
-    - "mai 2016: Achèvement de diplôme de collège"
+    - "mai 2016: Achèvement du diplôme de collège"
 

@@ -6,7 +6,6 @@ en:
   <<: *base
   dept: Karapakkam Campus [CBSE]
   title: Part-time French Teacher
-  description: Taught French as a foreign language in the primary section
   location: Chennai, India
   list:
     - Taught French as a foreign language to students aged 6 through 12
@@ -16,7 +15,6 @@ fr:
   <<: *base
   dept: Division CBSE à Karapakkam
   title: Professeur de français langue étrangère
-  description: Enseignant du FLE au niveau élémentaire
   location: Chennaï, Inde
   list:
     - Énseigné le français comme langue étrangère aux élèves agé.e.s entre 6 et 12 ans
