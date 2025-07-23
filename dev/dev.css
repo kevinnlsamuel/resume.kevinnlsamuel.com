@@ -1,0 +1,7 @@
+@media screen {
+	*:not([class*="border"]):not([class*="rounded"]) {
+		border-color: rgb(var(--fg));
+		border-width: 1px;
+		border-style: dashed;
+	}
+}

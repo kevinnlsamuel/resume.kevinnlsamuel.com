@@ -16,9 +16,10 @@ export default function(eleventyConfig) {
 		"./node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400.woff2": "assets/fa6-free.brands.woff2"})
 	if (process.env['NODE_ENV'] === 'production'){
 		eleventyConfig.addGlobalData("production", true);
+		eleventyConfig.ignores.add("dev/");
 	} else {
 		eleventyConfig.addGlobalData("production", false);
-		eleventyConfig.addPassthroughCopy("dev.css");
+		eleventyConfig.addPassthroughCopy("./dev/dev.css");
 	}
 	eleventyConfig.addDataExtension("yml,yaml", (data) => {
 		return parseYaml(data);
