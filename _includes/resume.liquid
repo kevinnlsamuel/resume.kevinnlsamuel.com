@@ -55,11 +55,14 @@ layout: page.liquid
 	<section class="grid grid-cols-2">
 		<section class="space-y-1">
 			<h3 class="bg-primary/40">{{messages.languages[lang]}}</h3>
-			<ul class="flex gap-2 flex-wrap">
+			<dl class="list-none table flex-wrap">
 				{%for language in langs %}
-					<li class="rounded-xl w-fit px-2 bg-slate-400/40">{{language[lang]}}</li>
+					<div class="table-row">
+						<dt class="table-cell px-1 py-1 font-semibold">{{language[lang]}}</dt>
+						<dd class="table-cell px-1 py-1 italic">{{messages.fluency[language.fluency][lang]}}</dd>
+					</div>
 				{%endfor%}
-			</ul>
+			</dl>
 		</section>
 	</section>
 	<section class="rounded bg-primary">
