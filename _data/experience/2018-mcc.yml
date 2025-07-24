@@ -12,7 +12,7 @@ en:
       - "May 2018: Completed Class XII"
       - Specialised in Commerce and Computer Science
       # - Studied French as second language
-    - "May 2018: Completed Class X"
+    - "May 2016: Completed Class X"
       # - Studied Tamil as second language
 fr:
   <<: *base
