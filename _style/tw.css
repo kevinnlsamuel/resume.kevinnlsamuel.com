@@ -37,8 +37,13 @@
 	}
 }
 
-.thatonefancyborder {
-	border-image-source: linear-gradient(to right, var(--tw-gradient-stops));
-	border-image-slice: 0 0 100% 0;
-	border-image-width: 1px;
+@layer components {
+	.thatonefancyborder {
+		border-image-source: linear-gradient(to right, var(--tw-gradient-stops));
+		border-image-slice: 0 0 100% 0;
+		border-image-width: 1px;
+	}
+	.noborder {
+		border-image-width: 0px;
+	}
 }

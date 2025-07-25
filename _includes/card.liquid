@@ -3,16 +3,16 @@
 	{%assign float = "float-left text-left"%}
 	{%assign clear = "clear-left"%}
 	{%assign align = "text-right"%}
-	{%assign bordercolourstops = "from-bg to-secondary from-40%"%}
+	{%assign bordercolourstops = "from-bg to-slate-400 from-40%"%}
 {%else%}
 	{%assign float = "float-right text-right"%}
 	{%assign clear = "clear-right"%}
 	{%assign align = "text-left"%}
-	{%assign bordercolourstops = "from-secondary to-bg to-60%"%}
+	{%assign bordercolourstops = "from-slate-400 to-bg to-60%"%}
 {%endif%}
-<article class="p-2 bg-bg last-of-type:border-b-0 border-b-2 border-b-primary">
+<article class="p-2 bg-bg last-of-type:noborder thatonefancyborder {{bordercolourstops}}">
 
-	<header class="flow-root pl-px pb-px thatonefancyborder {{bordercolourstops}} {{align}}">
+	<header class="flow-root pb-1 {{align}}">
 		<p class="text-md {{float}}">
 		{%if x.end-%}
 			<time datetime="{{-x.start | machineDate-}}">
@@ -29,15 +29,15 @@
 			</time>
 		{%-endif-%}
 		</p>
-		<h3 class="font-semibold">{{x.org}}</h3>
-		<h4 class="font-semibold {{clear}} {{float}} max-w-[60%]">{{x.title}}
+		<h3 class="font-semibold text-xl">{{x.org}}</h3>
+		<h4 class="font-semibold text-xl {{clear}} {{float}} max-w-[60%]">{{x.title}}
 			{%-if x.subtitle-%}<br />{{x.subtitle}}{%-endif-%}
 		</h4>
-		{%-if x.dept-%}
-			<p>{{x.dept}}</p>
-		{%-endif-%}
 		<p class="text-md before:text-slate-600 before:ml-px before:content-fa-pindot">
 		{{x.location}}
+		{%-if x.dept-%}
+			<span class="ml-2 pl-2 border-l-2 border-slate-600">{{x.dept}}</span>
+		{%-endif-%}
 		</p>
 	</header>
 
