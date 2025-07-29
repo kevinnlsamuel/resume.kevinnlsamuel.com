@@ -1,5 +1,5 @@
 @media screen {
-	*:not([class*="border"]):not([class*="rounded"]) {
+	*:not([class*="border"]):not([class*="rounded"]):not([class*=grad]) {
 		border-color: rgb(var(--fg));
 		border-width: 1px;
 		border-style: dashed;

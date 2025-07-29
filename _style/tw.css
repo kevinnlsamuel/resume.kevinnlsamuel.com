@@ -45,10 +45,17 @@
 	}
 	.grad-to-l { --border-direction: to left}
 	.grad-to-r { --border-direction: to right}
-	.gradborder {
-		border-image-source: linear-gradient(var(--border-direction, to right), var(--tw-gradient-stops));
+	.gradborder-b, .graddivide-x > :not(.section-head) + * {
 		border-image-slice: 0 0 100% 0;
-		border-image-width: 1px;
+	}
+	.gradborder-t, .graddivide-y > :not(.section-head) + * {
+		border-image-slice: 100% 0 0 0;
+	}
+	.gradborder-b, .gradborder-t,
+	.graddivide-x > :not(.section-head) + * ,
+	.graddivide-y > :not(.section-head) + * {
+		border-image-source: linear-gradient(var(--border-direction, to right), var(--tw-gradient-stops));
+		border-image-width: var(--gradwidth, 1px);
 	}
 	.noborder {
 		border-image-width: 0px;
