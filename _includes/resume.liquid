@@ -54,7 +54,7 @@ layout: page.liquid
 	</header>
 	<section class="grid grid-cols-2">
 		<section class="space-y-1">
-			<h3 class="bg-primary/40">{{messages.languages[lang]}}</h3>
+			<h3 class="section-head">{{messages.languages[lang]}}</h3>
 			<dl class="list-none table flex-wrap">
 				{%for language in langs %}
 					<div class="table-row">
@@ -66,7 +66,7 @@ layout: page.liquid
 		</section>
 	</section>
 	<section class="rounded space-y-2 divide-y-2 divide-y-secondary">
-		<h2>{{messages.experience[lang]}}</h2>
+		<h2 class="section-head">{{messages.experience[lang]}}</h2>
 		{%include './_includes/card.liquid', exp_code: '2025-c2c'%}
 		{%include './_includes/card.liquid', exp_code: '2025-hisk'%}
 		{%include './_includes/card.liquid', exp_code: '2024-ccd'%}
@@ -74,7 +74,7 @@ layout: page.liquid
 	</section>
 	<section class="grid grid-cols-2">
 		<section class="space-y-1">
-			<h3 class="bg-primary/40">{{messages.professionalskills[lang]}}</h3>
+			<h3 class="section-head">{{messages.professionalskills[lang]}}</h3>
 			<ul class="flex gap-2 flex-wrap">
 			{%for skill in skills.professional %}
 				{%if skill[lang]%}
@@ -84,7 +84,7 @@ layout: page.liquid
 			</ul>
 		</section>
 		<section class="space-y-1">
-			<h3 class="bg-primary/40">{{messages.technicalskills[lang]}}</h3>
+			<h3 class="section-head">{{messages.technicalskills[lang]}}</h3>
 			<ul class="flex gap-2 flex-wrap">
 				{%for skill in skills.technical %}
 					<li class="rounded-xl w-fit px-2 bg-slate-400/40">{{skill}}</li>
@@ -92,17 +92,17 @@ layout: page.liquid
 			</ul>
 		</section>
 	</section>
-	<section class="rounded bg-primary">
-		<h2>{{messages.education[lang]}}</h2>
+	<section class="rounded">
+		<h2 class="section-head">{{messages.education[lang]}}</h2>
 		{%include './_includes/card.liquid', exp_code: '2024-eflu', direction: 'rtl'%}
 		{%include './_includes/card.liquid', exp_code: '2021-mcc', direction: 'rtl'%}
 		{%include './_includes/card.liquid', exp_code: '2018-mcc', direction: 'rtl'%}
 	</section>
-	<section class="rounded bg-primary">
-		<h2>{{messages.certification[lang]}}</h2>
+	<section class="rounded">
+		<h2 class="section-head">{{messages.certification[lang]}}</h2>
 	</section>
 	<section class="space-y-1">
-		<h3 class="bg-primary/40">{{messages.hobbies[lang]}}</h3>
+		<h3 class="section-head">{{messages.hobbies[lang]}}</h3>
 		<ul class="flex gap-2 flex-wrap">
 		{%for hobby in hobbies %}
 			{%if hobby[lang]%}

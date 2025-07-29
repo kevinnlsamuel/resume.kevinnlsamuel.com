@@ -38,6 +38,11 @@
 }
 
 @layer components {
+	.section-head {
+		@apply text-lg;
+		@apply uppercase;
+		@apply bg-primary/40;
+	}
 	.grad-to-l { --border-direction: to left}
 	.grad-to-r { --border-direction: to right}
 	.gradborder {
