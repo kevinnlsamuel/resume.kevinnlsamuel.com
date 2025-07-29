@@ -1,16 +1,16 @@
 base: &base
   start: 2024-10-15
   end: 2025-07-08
-  org: Connect2Co, Inc.
+  org: Connect2Co Inc
 en:
   <<: *base
   title: Software Developer
   location: Remote
   list:
+    - Created in-house solution for secure and direct connections to private database
     - Built HTTP REST APIs using Express and FastAPI
-    - Designed Docker containers for the backend
-    - Designed architecture on AWS for deployment
-    - Created a simplified container for secure direct connections to private database on AWS
+    - Designed Docker containers for the API server
+    - Architected infrastructure for deployment of API server on AWS
 fr:
   <<: *base
   title: Développeur de logiciel

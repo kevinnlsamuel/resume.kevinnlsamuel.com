@@ -4,7 +4,8 @@ base: &base
   location: Nantes, France
 en:
   <<: *base
-  org: Rectory of the Academy of Nantes
+  org: France Education International
+  dept: Rectory of the Academy of Nantes
   title: English Language Assistant
   list:
     - Held oral interactions in English with and among French-speaking students
@@ -12,5 +13,6 @@ en:
 
 fr:
   <<: *base
-  org: Le rectorat de l'Académie de Nantes
+  org: France Education International
+  dept: Le rectorat de l'Académie de Nantes
   title: Assistant de langue anglaise
