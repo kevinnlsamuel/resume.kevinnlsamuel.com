@@ -3,14 +3,12 @@
 	{%assign float = "float-left text-left"%}
 	{%assign clear = "clear-left"%}
 	{%assign align = "text-right"%}
-	{%assign bordercolourstops = "from-bg to-slate-400 from-40%"%}
 {%else%}
 	{%assign float = "float-right text-right"%}
 	{%assign clear = "clear-right"%}
 	{%assign align = "text-left"%}
-	{%assign bordercolourstops = "from-slate-400 to-bg to-60%"%}
 {%endif%}
-<article class="p-2 bg-bg last-of-type:noborder thatonefancyborder {{bordercolourstops}}">
+<article class="p-2 bg-bg">
 
 	<header class="flow-root pb-1 {{align}}">
 		<p class="text-md {{float}}">
