@@ -64,15 +64,9 @@ layout: page.liquid
 				{%endfor%}
 			</dl>
 		</section>
-	</section>
-	<section class="rounded space-y-2 graddivide-y from-primary" style="--gradwidth: 2px;">
-		<h2 class="section-head">{{messages.experience[lang]}}</h2>
-		{%include './_includes/card.liquid', exp_code: '2025-c2c'%}
-		{%include './_includes/card.liquid', exp_code: '2025-hisk'%}
-		{%include './_includes/card.liquid', exp_code: '2024-ccd'%}
-		{%include './_includes/card.liquid', exp_code: '2022-fei'%}
-	</section>
-	<section class="grid grid-cols-2">
+		<section>
+			<h3 class="section-head">Qualifications</h3>
+		</section>
 		<section class="space-y-1">
 			<h3 class="section-head">{{messages.professionalskills[lang]}}</h3>
 			<ul class="flex gap-2 flex-wrap">
@@ -91,6 +85,13 @@ layout: page.liquid
 				{%endfor%}
 			</ul>
 		</section>
+	</section>
+	<section class="rounded space-y-2 graddivide-y from-primary" style="--gradwidth: 2px;">
+		<h2 class="section-head">{{messages.experience[lang]}}</h2>
+		{%include './_includes/card.liquid', exp_code: '2025-c2c'%}
+		{%include './_includes/card.liquid', exp_code: '2025-hisk'%}
+		{%include './_includes/card.liquid', exp_code: '2024-ccd'%}
+		{%include './_includes/card.liquid', exp_code: '2022-fei'%}
 	</section>
 	<section class="rounded">
 		<h2 class="section-head">{{messages.education[lang]}}</h2>
