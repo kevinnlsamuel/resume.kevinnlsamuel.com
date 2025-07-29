@@ -38,8 +38,10 @@
 }
 
 @layer components {
-	.thatonefancyborder {
-		border-image-source: linear-gradient(to right, var(--tw-gradient-stops));
+	.grad-to-l { --border-direction: to left}
+	.grad-to-r { --border-direction: to right}
+	.gradborder {
+		border-image-source: linear-gradient(var(--border-direction, to right), var(--tw-gradient-stops));
 		border-image-slice: 0 0 100% 0;
 		border-image-width: 1px;
 	}
