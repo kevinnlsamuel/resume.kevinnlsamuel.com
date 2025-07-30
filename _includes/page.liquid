@@ -29,7 +29,7 @@ layout: base.liquid
 				has-[:focus]:absolute
 				peer-focus:not-sr-only peer-hover:not-sr-only">
 		<ul class="bg-bg p-2 pt-px">
-			{%for lang in langs%}
+			{%for lang in site.langs%}
 				<li lang="{{lang[0]}}"><a href="/{{lang[0]}}/">{{lang[1].name}}<a></li>
 			{%endfor%}
 		</ul>
