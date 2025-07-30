@@ -39,7 +39,6 @@
 
 @layer components {
 	.section-head {
-		@apply text-lg;
 		@apply uppercase;
 		@apply bg-primary/40;
 	}
@@ -73,7 +72,7 @@
 		@apply last-of-type:after:content-none;
 		@apply after:content-['•'];
 		@apply after:text-primary;
-		@apply after:mx-px;
+		@apply after:mx-1;
 	}
 	.pill-list li {
 		@apply rounded-xl;

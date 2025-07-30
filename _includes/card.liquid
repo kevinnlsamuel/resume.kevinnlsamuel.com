@@ -28,9 +28,11 @@
 		{%-endif-%}
 		</p>
 		<h3 class="font-semibold text-xl">{{x.org}}</h3>
-		<h4 class="font-semibold text-xl {{clear}} {{float}} max-w-[60%]">{{x.title}}
-			{%-if x.subtitle-%}<br />{{x.subtitle}}{%-endif-%}
+		{%if x.title%}
+		<h4 class="font-semibold leading-none text-xl {{clear}} {{float}} max-w-[60%]">{{x.title}}
+			{%-if x.subtitle-%}<br /><span class="text-lg">{{x.subtitle}}</span>{%-endif-%}
 		</h4>
+		{%endif%}
 		<p class="text-md before:text-slate-600 before:ml-px before:content-fa-pindot">
 		{{x.location}}
 		</p>

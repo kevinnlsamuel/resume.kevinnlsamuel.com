@@ -1,12 +1,10 @@
 base: &base
   start: 2004-06-01
   end: 2018-04-30
-  org: Madras Christian College Matriculation Higher Secondary School
+  org: MCC Matriculation Higher Secondary School
 en:
   <<: *base
-  title: Primary and Secondary Education
   location: Chennai, India
-  dept: Tamil Nadu State Board
   list:
     - 
       - "May 2018: Completed Class XII"
@@ -16,7 +14,6 @@ en:
       # - Studied Tamil as second language
 fr:
   <<: *base
-  title: Éducation primaire et sécondaire
   location: Chennaï, Inde
   list:
     - 

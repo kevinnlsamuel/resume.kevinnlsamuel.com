@@ -6,7 +6,7 @@ layout: page.liquid
 {{messages.cv[lang]}}
 {%endcontentid%}
 <article id="{{messages.cv[lang]}}"
-		 class="h-full
+		 class="min-h-full
 				grid gap-2 grid-rows-[max-content_auto]
 				">
 	<header class="grid gap-2 md:gap-0 print:gap-0
@@ -15,7 +15,7 @@ layout: page.liquid
 				   ">
 		<h1 class="text-4xl font-bold">{{-name[lang]-}}</h1>
 		<p>{{-kicker[lang]-}}</p>
-		<address class="not-italic md:row-span-2 print:row-span-2 pl-2 md:border-l-4 border-primary">
+		<address class="not-italic md:row-span-2 print:row-span-2 pl-2">
 			<ul title="{{-messages.contactme[lang]-}}"
 				class="flex flex-col text-right">
 				{%for contact in socials.contacts-%}
@@ -52,7 +52,10 @@ layout: page.liquid
 			</aside>
 		</address>
 	</header>
-	<section class="grid grid-cols-2">
+	<section class="grid print:grid-cols-2 md:grid-cols-2">
+		<section>
+			<h3 class="section-head">Qualifications</h3>
+		</section>
 		<section class="space-y-1">
 			<h3 class="section-head">{{messages.languages[lang]}}</h3>
 			<dl class="list-none table flex-wrap">
@@ -63,9 +66,6 @@ layout: page.liquid
 					</div>
 				{%endfor%}
 			</dl>
-		</section>
-		<section>
-			<h3 class="section-head">Qualifications</h3>
 		</section>
 		<section class="space-y-1">
 			<h3 class="section-head">{{messages.professionalskills[lang]}}</h3>
