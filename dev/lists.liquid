@@ -1,0 +1,20 @@
+---
+layout: page.liquid
+---
+
+<ul class="w-1/4 inline-list">
+	{%for item in skills.technical%}
+		<li>{{item}}</li>
+	{%endfor%}
+</ul>
+
+<ul class="w-1/2 inline-list">
+	{%for item in skills.professional%}
+		<li>{{item.en}}</li>
+	{%endfor%}
+</ul>
+<ul class="w-1/2 pill-list">
+	{%for item in skills.professional%}
+		<li>{{item.en}}</li>
+	{%endfor%}
+</ul>

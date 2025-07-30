@@ -69,19 +69,19 @@ layout: page.liquid
 		</section>
 		<section class="space-y-1">
 			<h3 class="section-head">{{messages.professionalskills[lang]}}</h3>
-			<ul class="flex gap-2 flex-wrap">
+			<ul class="inline-list">
 			{%for skill in skills.professional %}
 				{%if skill[lang]%}
-				<li class="rounded-xl w-fit px-2 bg-slate-400/40">{{skill[lang]}}</li>
+				<li class="">{{skill[lang]}}</li>
 				{%endif%}
 			{%endfor%}
 			</ul>
 		</section>
 		<section class="space-y-1">
 			<h3 class="section-head">{{messages.technicalskills[lang]}}</h3>
-			<ul class="flex gap-2 flex-wrap">
+			<ul class="inline-list">
 				{%for skill in skills.technical %}
-					<li class="rounded-xl w-fit px-2 bg-slate-400/40">{{skill}}</li>
+					<li class="">{{skill}}</li>
 				{%endfor%}
 			</ul>
 		</section>

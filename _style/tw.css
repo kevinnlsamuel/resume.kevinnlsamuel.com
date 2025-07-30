@@ -60,4 +60,25 @@
 	.noborder {
 		border-image-width: 0px;
 	}
+	.inline-list  {
+		@apply flex;
+		@apply flex-wrap;
+	}
+	.pill-list {
+		@apply flex;
+		@apply flex-wrap;
+		@apply gap-2;
+	}
+	.inline-list li {
+		@apply last-of-type:after:content-none;
+		@apply after:content-['•'];
+		@apply after:text-primary;
+		@apply after:mx-px;
+	}
+	.pill-list li {
+		@apply rounded-xl;
+		@apply w-fit;
+		@apply px-2;
+		@apply bg-slate-400/40;
+	}
 }
