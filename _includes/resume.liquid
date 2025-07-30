@@ -55,6 +55,19 @@ layout: page.liquid
 	<section class="grid print:grid-cols-2 md:grid-cols-2">
 		<section>
 			<h3 class="section-head">Qualifications</h3>
+			<ul class="space-y-2 my-2">
+				{%for item in qualifications[lang]%}
+					<li>
+					{%if item.first%}
+						<ul class="list-disc ml-4 leading-tight">
+							{%for subitem in item%}
+								<li>{{subitem}}</li>
+							{%endfor%}
+						</ul>
+					{%endif%}
+					</li>
+				{%endfor%}
+			</ul>
 		</section>
 		<section class="space-y-1">
 			<h3 class="section-head">{{messages.languages[lang]}}</h3>
