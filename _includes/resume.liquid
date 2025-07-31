@@ -9,6 +9,7 @@ layout: page.liquid
 		 class="min-h-full
 				grid gap-2 grid-rows-[max-content_auto]
 				">
+
 	<header class="grid gap-2 md:gap-0 print:gap-0
 				   grid-flow-row md:grid-flow-col print:grid-flow-col
 				   md:grid-cols-[3fr_2fr] print:grid-cols-[3fr_2fr]
@@ -52,7 +53,9 @@ layout: page.liquid
 			</aside>
 		</address>
 	</header>
+
 	<section class="grid gap-x-1 print:grid-cols-2 md:grid-cols-2">
+
 		<section>
 			<h3 class="section-head">Qualifications</h3>
 			<ul class="space-y-2 my-2">
@@ -69,6 +72,7 @@ layout: page.liquid
 				{%endfor%}
 			</ul>
 		</section>
+
 		<section class="space-y-1">
 			<h3 class="section-head">{{messages.languages[lang]}}</h3>
 			<dl class="list-none table">
@@ -80,6 +84,7 @@ layout: page.liquid
 				{%endfor%}
 			</dl>
 		</section>
+
 		<section class="space-y-1">
 			<h3 class="section-head">{{messages.professionalskills[lang]}}</h3>
 			<ul class="inline-list">
@@ -90,6 +95,7 @@ layout: page.liquid
 			{%endfor%}
 			</ul>
 		</section>
+
 		<section class="space-y-1">
 			<h3 class="section-head">{{messages.technicalskills[lang]}}</h3>
 			<ul class="inline-list">
@@ -98,7 +104,9 @@ layout: page.liquid
 				{%endfor%}
 			</ul>
 		</section>
+
 	</section>
+
 	<section class="space-y-2 graddivide-y from-primary" style="--gradwidth: 2px;">
 		<h2 class="section-head">{{messages.experience[lang]}}</h2>
 		{%include './_includes/card.liquid', exp_code: '2025-c2c'%}
@@ -106,15 +114,18 @@ layout: page.liquid
 		{%include './_includes/card.liquid', exp_code: '2024-ccd'%}
 		{%include './_includes/card.liquid', exp_code: '2022-fei'%}
 	</section>
+
 	<section class="space-y-2 graddivide-y from-primary" style="--gradwidth: 2px;">
 		<h2 class="section-head">{{messages.education[lang]}}</h2>
 		{%include './_includes/card.liquid', exp_code: '2024-eflu', direction: 'rtl'%}
 		{%include './_includes/card.liquid', exp_code: '2021-mcc', direction: 'rtl'%}
 		{%include './_includes/card.liquid', exp_code: '2018-mcc', direction: 'rtl'%}
 	</section>
+
 	<section class="">
 		<h2 class="section-head">{{messages.certification[lang]}}</h2>
 	</section>
+
 	<section class="space-y-1">
 		<h3 class="section-head">{{messages.hobbies[lang]}}</h3>
 		<ul class="flex gap-2 flex-wrap pill-list">
@@ -125,4 +136,5 @@ layout: page.liquid
 		{%endfor%}
 		</ul>
 	</section>
+
 </article>
