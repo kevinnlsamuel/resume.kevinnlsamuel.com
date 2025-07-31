@@ -41,6 +41,7 @@
 	.section-head {
 		@apply uppercase;
 		@apply bg-primary/40;
+		@apply ps-1.5;
 	}
 	.grad-to-l { --border-direction: to left}
 	.grad-to-r { --border-direction: to right}

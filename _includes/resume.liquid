@@ -52,7 +52,7 @@ layout: page.liquid
 			</aside>
 		</address>
 	</header>
-	<section class="grid print:grid-cols-2 md:grid-cols-2">
+	<section class="grid gap-x-1 print:grid-cols-2 md:grid-cols-2">
 		<section>
 			<h3 class="section-head">Qualifications</h3>
 			<ul class="space-y-2 my-2">
@@ -71,10 +71,10 @@ layout: page.liquid
 		</section>
 		<section class="space-y-1">
 			<h3 class="section-head">{{messages.languages[lang]}}</h3>
-			<dl class="list-none table flex-wrap">
+			<dl class="list-none table">
 				{%for language in langs %}
 					<div class="table-row">
-						<dt class="table-cell px-1 py-1 font-semibold">{{language[lang]}}</dt>
+						<dt class="table-cell px-1 py-1">{{language[lang]}}</dt>
 						<dd class="table-cell px-1 py-1 italic">{{messages.fluency[language.fluency][lang]}}</dd>
 					</div>
 				{%endfor%}
@@ -99,28 +99,28 @@ layout: page.liquid
 			</ul>
 		</section>
 	</section>
-	<section class="rounded space-y-2 graddivide-y from-primary" style="--gradwidth: 2px;">
+	<section class="space-y-2 graddivide-y from-primary" style="--gradwidth: 2px;">
 		<h2 class="section-head">{{messages.experience[lang]}}</h2>
 		{%include './_includes/card.liquid', exp_code: '2025-c2c'%}
 		{%include './_includes/card.liquid', exp_code: '2025-hisk'%}
 		{%include './_includes/card.liquid', exp_code: '2024-ccd'%}
 		{%include './_includes/card.liquid', exp_code: '2022-fei'%}
 	</section>
-	<section class="rounded">
+	<section class="space-y-2 graddivide-y from-primary" style="--gradwidth: 2px;">
 		<h2 class="section-head">{{messages.education[lang]}}</h2>
 		{%include './_includes/card.liquid', exp_code: '2024-eflu', direction: 'rtl'%}
 		{%include './_includes/card.liquid', exp_code: '2021-mcc', direction: 'rtl'%}
 		{%include './_includes/card.liquid', exp_code: '2018-mcc', direction: 'rtl'%}
 	</section>
-	<section class="rounded">
+	<section class="">
 		<h2 class="section-head">{{messages.certification[lang]}}</h2>
 	</section>
 	<section class="space-y-1">
 		<h3 class="section-head">{{messages.hobbies[lang]}}</h3>
-		<ul class="flex gap-2 flex-wrap">
+		<ul class="flex gap-2 flex-wrap pill-list">
 		{%for hobby in hobbies %}
 			{%if hobby[lang]%}
-			<li class="rounded-xl w-fit px-2 bg-slate-400/40">{{hobby[lang]}}</li>
+			<li >{{hobby[lang]}}</li>
 			{%endif%}
 		{%endfor%}
 		</ul>
