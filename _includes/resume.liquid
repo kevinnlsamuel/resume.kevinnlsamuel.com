@@ -58,17 +58,14 @@ layout: page.liquid
 
 		<section>
 			<h3 class="section-head">Qualifications</h3>
-			<ul class="space-y-2 my-2">
+			<ul class="space-y-2 my-2 list-disc ml-4 leading-tight">
 				{%for item in qualifications[lang]%}
-					<li>
-					{%if item.first%}
-						<ul class="list-disc ml-4 leading-tight">
-							{%for subitem in item%}
-								<li>{{subitem}}</li>
-							{%endfor%}
-						</ul>
+					{%-assign next = qualifications[lang][forloop.index+1]-%}
+					{%if item%}
+						<li class="{%if next==null%}pb-1{%endif%}">
+							{{-item-}}
+						</li>
 					{%endif%}
-					</li>
 				{%endfor%}
 			</ul>
 		</section>
