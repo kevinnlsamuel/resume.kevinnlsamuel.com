@@ -11,6 +11,7 @@
 <article class="p-2 bg-bg break-inside-avoid">
 
 	<header class="flow-root pb-1 {{align}}">
+
 		<p class="text-md {{float}}">
 		{%if x.end-%}
 			<time datetime="{{-x.start | machineDate-}}">
@@ -27,18 +28,23 @@
 			</time>
 		{%-endif-%}
 		</p>
-		<h3 class="font-semibold text-xl">{{x.org}}</h3>
+
 		{%if x.title%}
-		<h4 class="font-semibold leading-none text-xl {{clear}} {{float}} max-w-[60%]">{{x.title}}
+		<p class="font-semibold leading-none text-xl {{clear}} {{float}} max-w-[60%]">{{x.title}}
 			{%-if x.subtitle-%}<br /><span class="text-lg">{{x.subtitle}}</span>{%-endif-%}
-		</h4>
-		{%endif%}
-		<p class="text-md before:text-slate-600 before:ml-px before:content-fa-pindot">
-		{{x.location}}
 		</p>
+		{%endif%}
+
+		<h3 class="font-semibold text-xl">{{-x.org-}}</h3>
+
+		<p class="text-md before:text-slate-600 before:mr-1 before:content-fa-pindot">
+		{{-x.location-}}
+		</p>
+
 		{%-if x.dept-%}
 			<p class="">{{x.dept}}</p>
 		{%-endif-%}
+
 	</header>
 
 	<main>
