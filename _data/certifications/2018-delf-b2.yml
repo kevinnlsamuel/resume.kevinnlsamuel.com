@@ -1,0 +1,10 @@
+base: &base
+  date: 2018-07-27
+en:
+  <<: *base
+  org: French Ministry of Education
+  cert: DELF B2
+fr:
+  <<: *base
+  org: Ministère de l'Éducation Nationale
+  cert: Diplôme d'études en langue française

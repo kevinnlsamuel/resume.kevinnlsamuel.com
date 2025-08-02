@@ -1,0 +1,6 @@
+{%assign x = certifications[cert_code][lang]%}
+<tr>
+	<td>{{x.cert}}</td>
+	<td class="text-end">{{x.org}}</td>
+	<td class="text-end"><date datetime="{{x.date | machineDate}}">{{x.date | fmtDate: lang}}</date></td>
+</tr>
