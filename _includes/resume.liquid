@@ -71,17 +71,6 @@ layout: page.liquid
 		</section>
 
 		<section class="space-y-1">
-			<h3 class="section-head">{{messages.professionalskills[lang]}}</h3>
-			<ul class="inline-list">
-			{%for skill in skills.professional %}
-				{%if skill[lang]%}
-				<li class="">{{skill[lang]}}</li>
-				{%endif%}
-			{%endfor%}
-			</ul>
-		</section>
-
-		<section class="space-y-1">
 			<h3 class="section-head">{{messages.languages[lang]}}</h3>
 			<dl class="list-none table">
 				{%for language in langs %}
@@ -92,6 +81,18 @@ layout: page.liquid
 				{%endfor%}
 			</dl>
 		</section>
+
+		<section class="space-y-1">
+			<h3 class="section-head">{{messages.professionalskills[lang]}}</h3>
+			<ul class="inline-list">
+			{%for skill in skills.professional %}
+				{%if skill[lang]%}
+				<li class="">{{skill[lang]}}</li>
+				{%endif%}
+			{%endfor%}
+			</ul>
+		</section>
+
 
 		<section class="space-y-1">
 			<h3 class="section-head">{{messages.technicalskills[lang]}}</h3>
