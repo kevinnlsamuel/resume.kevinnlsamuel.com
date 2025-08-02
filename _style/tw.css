@@ -57,7 +57,7 @@
 		border-image-source: linear-gradient(var(--border-direction, to right), var(--tw-gradient-stops));
 		border-image-width: var(--gradwidth, 1px);
 	}
-	.noborder {
+	.border-0 {
 		border-image-width: 0px;
 	}
 	.inline-list  {

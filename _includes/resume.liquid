@@ -54,32 +54,20 @@ layout: page.liquid
 		</address>
 	</header>
 
-	<section class="grid gap-x-1 print:grid-cols-2 md:grid-cols-2">
+	<section class="grid gap-1 print:grid-cols-2 md:grid-cols-2">
 
-		<section>
-			<h3 class="section-head">Qualifications</h3>
-			<ul class="space-y-2 my-2 list-disc ml-4 leading-tight">
+		<section class="space-y-1">
+			<h3 class="section-head">{{messages.brief[lang]}}</h3>
+			<ul>
 				{%for item in qualifications[lang]%}
 					{%-assign next = qualifications[lang][forloop.index+1]-%}
 					{%if item%}
-						<li class="{%if next==null%}pb-1{%endif%}">
+						<li class="{%if next==null%}last-of-type:border-0 gradborder-b from-bg via-10% to-90% via-fg/30{%endif%}">
 							{{-item-}}
 						</li>
 					{%endif%}
 				{%endfor%}
 			</ul>
-		</section>
-
-		<section class="space-y-1">
-			<h3 class="section-head">{{messages.languages[lang]}}</h3>
-			<dl class="list-none table">
-				{%for language in langs %}
-					<div class="table-row">
-						<dt class="table-cell px-1 py-1">{{language[lang]}}</dt>
-						<dd class="table-cell px-1 py-1 italic">{{messages.fluency[language.fluency][lang]}}</dd>
-					</div>
-				{%endfor%}
-			</dl>
 		</section>
 
 		<section class="space-y-1">
@@ -91,6 +79,18 @@ layout: page.liquid
 				{%endif%}
 			{%endfor%}
 			</ul>
+		</section>
+
+		<section class="space-y-1">
+			<h3 class="section-head">{{messages.languages[lang]}}</h3>
+			<dl class="list-none table">
+				{%for language in langs %}
+					<div class="table-row">
+						<dt class="table-cell pr-1.5">{{language[lang]}}</dt>
+						<dd class="table-cell italic">{{messages.fluency[language.fluency][lang]}}</dd>
+					</div>
+				{%endfor%}
+			</dl>
 		</section>
 
 		<section class="space-y-1">
