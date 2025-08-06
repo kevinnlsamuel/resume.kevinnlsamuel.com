@@ -7,4 +7,4 @@ en:
 fr:
   <<: *base
   org: Ministère de l'Éducation Nationale
-  cert: Diplôme d'études en langue française
+  cert: Diplôme d'études en langue française (DELF) B2

@@ -1,0 +1,10 @@
+base: &base
+  date: '2015'
+  org: ABRSM
+
+en:
+  <<: *base
+  cert: Grade 5 Music Theory
+fr:
+  <<: *base
+  cert: Niveau 5 en théorie musicale
