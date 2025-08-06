@@ -25,12 +25,20 @@ export default function(eleventyConfig) {
 		return parseYaml(data);
 	})
 	eleventyConfig.addLiquidFilter("fmtDate", function(date, lang){
-		return new Intl.DateTimeFormat(lang, {
+		const fmt = {
 			month: "long",
 			year: "numeric",
-		}).format(date)
+		}
+		if (!(date instanceof Date)) {
+			date = new Date(date.toString())
+			delete(fmt.month)
+		}
+		return new Intl.DateTimeFormat(lang, fmt).format(date)
 	})
 	eleventyConfig.addFilter("machineDate", function(date){
+		if (!(date instanceof Date)) {
+			return date
+		}
 		const m = date.getMonth().toString().padStart(2, "0")
 		const y = date.getFullYear().toString()
 		return `${y}-${m}`
