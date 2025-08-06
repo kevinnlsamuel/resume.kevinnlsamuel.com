@@ -1,0 +1,9 @@
+base: &base
+  date: 2024-03-15
+  org: NPTEL
+  cert: Introduction to Programming in C
+
+en:
+  <<: *base
+fr:
+  <<: *base

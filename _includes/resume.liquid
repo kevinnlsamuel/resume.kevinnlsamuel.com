@@ -124,6 +124,8 @@ layout: page.liquid
 		<h2 class="section-head">{{messages.certification[lang]}}</h2>
 		<table class="w-full">
 			<tbody class="divide-y divide-slate-400/40">
+			{%include './_includes/certificate.liquid', cert_code: '2024-swayam-introc'%}
+			{%include './_includes/certificate.liquid', cert_code: '2024-swayam-basicslangsci'%}
 			{%include './_includes/certificate.liquid', cert_code: '2018-delf-b2'%}
 			{%include './_includes/certificate.liquid', cert_code: '2015-abrsm-theory-5'%}
 			</tbody>
