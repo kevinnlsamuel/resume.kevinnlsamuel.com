@@ -1,5 +1,10 @@
-const _tel = process.env['RESUME_TEL'] ?? '+91 00000 00000'
-const _email = process.env['RESUME_EMAIL'] ?? 'haha@kevinnlsamuel.com'
+let _tel = '+91 00000 00000'
+let _email = 'haha@kevinnlsamuel.com'
+
+if (process.env['NODE_ENV'] === 'production') {
+	_tel = process.env['RESUME_TEL'] ?? _tel
+	_email = process.env['RESUME_EMAIL'] ?? _email
+}
 
 const tel = {
 	text: _tel,
