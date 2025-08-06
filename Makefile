@@ -3,11 +3,11 @@
 PROJECT = resume
 
 dev: NODE_ENV=development
-dev:
+dev: development.env
 	$(call RUNNER,npm run dev)
 
 build: NODE_ENV=production
-build:
+build: production.env
 	$(call RUNNER,npm run build)
 
 setup:
@@ -16,10 +16,14 @@ setup:
 sh:
 	podman exec --interactive --tty $(PROJECT)-dev sh
 
+%.env:
+	touch $@
+
 define RUNNER
 	podman run --rm --interactive --tty \
 		--name=$(PROJECT)-$@ \
 		--workdir=/app\
+		--env-file=$(NODE_ENV).env \
 		--env=NODE_ENV=$(NODE_ENV) \
 		--volume=$(PWD):/app:z \
 		--volume=$(PROJECT)_modules:/app/node_modules \
