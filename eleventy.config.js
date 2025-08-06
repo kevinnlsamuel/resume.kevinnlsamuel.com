@@ -17,20 +17,6 @@ export default function(eleventyConfig) {
 	if (process.env['NODE_ENV'] === 'production'){
 		eleventyConfig.addGlobalData("production", true);
 		eleventyConfig.ignores.add("dev/");
-		const _tel = process.env['RESUME_TEL'] ?? '+91 00000 00000'
-		const tel = {
-			text: _tel,
-			link: `tel:${_tel.replaceAll(' ','')}`,
-			obfuscate: true,
-		}
-		const _email = process.env['RESUME_EMAIL'] ?? 'haha@kevinnlsamuel.com'
-		const email = {
-			text: _email,
-			link: `mailto:${_email}`,
-			obfuscate: true,
-		}
-		eleventyConfig.addGlobalData("socials.contacts.tel", tel)
-		eleventyConfig.addGlobalData("socials.contacts.email", email)
 	} else {
 		eleventyConfig.addGlobalData("production", false);
 		eleventyConfig.addPassthroughCopy("./dev/dev.css");
