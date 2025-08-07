@@ -71,7 +71,7 @@
 	}
 	.inline-list li {
 		@apply last-of-type:after:content-none;
-		@apply after:content-['•'];
+		@apply after:content-['\2022'];
 		@apply after:text-primary;
 		@apply after:mx-1;
 	}
