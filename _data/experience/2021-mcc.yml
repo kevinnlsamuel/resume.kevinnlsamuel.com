@@ -10,11 +10,13 @@ en:
   list:
     - Studied various literary forms and styles in English
     - Introduced to theoretical analysis of literary works
+    - Introduced to the study of linguistics
 fr:
   <<: *base
   location: Chennaï, Inde
   title: Licence d'Arts
   subtitle: Langue et littérature anglaise
   list:
-    - Études des styles litéraires en angalais
-    - Formation sur la base de l'analyse théorique de la littérature
+    - Étude des styles littéraires en angalais
+    - Formation de base sur l'analyse théorique de la littérature
+    - Introduction à la linguistique
