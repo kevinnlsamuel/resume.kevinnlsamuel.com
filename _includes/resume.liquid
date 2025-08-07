@@ -59,10 +59,10 @@ layout: page.liquid
 		<section class="space-y-1">
 			<h3 class="section-head">{{messages.brief[lang]}}</h3>
 			<ul>
-				{%for item in qualifications[lang]%}
-					{%-assign next = qualifications[lang][forloop.index+1]-%}
+				{%for item in brief[lang]%}
+					{%-assign next = brief[lang][forloop.index+1]-%}
 					{%if item%}
-						<li class="{%if next==null%}last-of-type:border-0 gradborder-b from-bg via-10% to-90% via-fg/30{%endif%}">
+						<li class="{%if next==null%}last-of-type:border-0 gradborder-b from-bg to-bg via-10% to-90% via-slate-400/40{%endif%}">
 							{{-item-}}
 						</li>
 					{%endif%}
@@ -73,9 +73,9 @@ layout: page.liquid
 		<section class="space-y-1">
 			<h3 class="section-head">{{messages.languages[lang]}}</h3>
 			<dl class="list-none table">
-				{%for language in langs %}
+				{%for language in languages %}
 					<div class="table-row">
-						<dt class="table-cell pr-1.5">{{language[lang]}}</dt>
+						<dt class="text-nowrap table-cell pr-1.5">{{language[lang]}}</dt>
 						<dd class="table-cell italic">{{messages.fluency[language.fluency][lang]}}</dd>
 					</div>
 				{%endfor%}

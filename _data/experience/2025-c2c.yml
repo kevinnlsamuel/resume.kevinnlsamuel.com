@@ -17,4 +17,5 @@ fr:
   location: Télétravail
   list:
     - Programmation des APIs REST avec Express et FastAPI
-    - Formulation des conteneurs Dockers pour déployer
+    - Formulation des conteneurs Dockers pour le déploiement
+    - Formulation

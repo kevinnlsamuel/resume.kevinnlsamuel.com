@@ -47,7 +47,7 @@ fluency:
     fr: bilingue
   pro:
     en: Professional proficiency
-    fr: capacité professionelle complète
+    fr: capacité professionelle
   limited:
     en: Limited professional proficiency
     fr: capacité professionelle limitée
@@ -65,7 +65,7 @@ languages:
 
 professionalskills:
   en: Professional Skills
-  fr: Compétences professionelles
+  fr: Capacités professionelles
 technicalskills:
   en: Technical Skills
   fr: Connaissances téchniques
