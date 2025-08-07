@@ -8,8 +8,9 @@ en:
   dept: Rectory of the Academy of Nantes
   title: English Language Assistant
   list:
-    - Held oral interactions in English with and among French-speaking students
-    - Exposed the 
+    - Conversed with students in English on topics which interested them
+    - Organised ludic games and activities in English
+    - Shared Indian culture through reading children's books in class
 
 fr:
   <<: *base
@@ -17,5 +18,6 @@ fr:
   dept: Le rectorat de l'Académie de Nantes
   title: Assistant de langue anglaise
   list:
-    - Conversations orales en anglais avec des élèves
-    - Échange de la culture indienne
+    - Conversations anglaises régulières avec des élèves sur des thèmes qui les intéressent
+    - Organisation de jeux et activités ludiques en anglais
+    - Partage de la culture indienne par des contes indiennes anglaises lisées en classe
