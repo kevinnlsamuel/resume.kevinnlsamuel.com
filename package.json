@@ -4,6 +4,7 @@
   "description": "Kevin's resume",
   "main": "index.js",
   "scripts": {
+    "predev": "npx --yes update-browserslist-db@latest",
     "dev": "concurrently npm:dev:11ty npm:dev:tw",
     "dev:11ty": "eleventy --serve",
     "dev:tw": "tailwindcss -i _style/tw.css -o _site/style.css -w",
