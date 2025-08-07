@@ -5,11 +5,12 @@ base: &base
 en:
   <<: *base
   dept: Karapakkam Campus [CBSE]
-  title: Part-time French Teacher
+  title: French Teacher
   location: Chennai, India
   list:
     - Taught French as a foreign language to students aged 6 through 12
-    - Conducted regular evaluation and one-on-one review of results with students
+    - Prepared ludic material and activities
+    - Conducted regular evaluation and one-on-one review of results
     - Proofread monthly newsletter in English
 fr:
   <<: *base
@@ -19,7 +20,5 @@ fr:
   list:
     - Instruction aux élèves d'âges 6 à 12 ans
     - Préparation des matériels et des activités ludiques
-       <a class="underline print:no-underline text-sm" target="_blank"
-      href="https://hisk.kevinnlsamuel.com">(hisk.kevinnlsamuel.com)</a>
-    - Évaluation périodique et revue individuelle des resultats
+    - Évaluation périodique et analyse individuelle des resultats
     - Relecture du magazine mensuel (anglais) de l'école
