@@ -7,15 +7,16 @@ en:
   title: Software Developer
   location: Remote
   list:
-    - Created in-house solution for secure and direct connections to private database
+    - Created in-house solution for securely connecting to private database
+    - Architected AWS infrastructure for deploying containerised application
+    - Facilitated deployment of updates using GitHub Actions
     - Built HTTP REST APIs using Express and FastAPI
-    - Designed Docker containers for the API server
-    - Architected infrastructure for deployment of API server on AWS
 fr:
   <<: *base
-  title: Développeur de logiciel
+  title: Développeur logiciel
   location: Télétravail
   list:
+    - Solution maison pour l'accès sécurisé à la base de donnés
+    - Composition d'architecture AWS pour déployer l'appli conteneurisée
+    - Facilitation de la mise à jour sur cloud avec GitHub Actions
     - Programmation des APIs REST avec Express et FastAPI
-    - Formulation des conteneurs Dockers pour le déploiement
-    - Formulation
