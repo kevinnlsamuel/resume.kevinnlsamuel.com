@@ -16,7 +16,8 @@ fr:
   title: Développeur logiciel
   location: Télétravail
   list:
-    - Solution maison pour l'accès sécurisé à la base de donnés
-    - Composition d'architecture AWS pour déployer l'appli conteneurisée
-    - Facilitation de la mise à jour sur cloud avec GitHub Actions
+    - Solution interne pour l'accès sécurisé à la base de données
+    - Conteneurisation des applications pour simplifier leur déploiement
+    - Composition d'architecture AWS pour les conteneurs des applications
+    - Facilitation des mises à jour sur cloud avec GitHub Actions
     - Programmation des APIs REST avec Express et FastAPI
